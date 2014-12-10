@@ -1,0 +1,101 @@
+doctype html
+html
+
+  head
+
+  meta(charset="utf-8")
+
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+
+  title Tristan Darwent
+
+  meta(name="description", content="Tristan Darwent Portfolio Site")
+
+  meta(name="viewport", content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui")
+
+  link(rel="shortcut icon" href="assets/images/logo.png")
+
+  link(rel="stylesheet", href="assets/styles/reset.css", type="text/css")
+
+  link(rel="stylesheet", href="assets/styles/main.css", type="text/css")
+
+  body
+
+  //- Background Video
+  
+  video.bg-vid(autoplay loop)
+
+    source(src="assets/videos/bg-video.mp4" type="video/mp4")
+
+    source(src="assets/videos/bg-video.ogv" type="video/ogg")
+
+  div.bg-cover
+
+  div.wrapper
+
+    header
+
+      a.logo(href="../")
+
+        div
+
+      nav
+
+        ul
+
+          li: a(href="/") Home
+
+          li: a(href="/contact") Portfolio
+
+          li: a(href="/about") About
+
+      ul.social
+
+        li: a.twitter(href="https://twitter.com/tristandarwent" target="_blank")
+
+        li: a.github(href="https://github.com/tristandarwent" target="_blank")
+
+        li: a.linkedin(href="http://www.linkedin.com/pub/tristan-darwent/91/535/388" target="_blank")
+
+        li: a.email(href="mailto:tristandarwent@gmail.com" target="_blank")
+
+    div.main
+
+  footer
+
+    h6 ©2014 Tristan Darwent
+
+  // -----------------------------
+  // Templates
+  // -----------------------------
+
+  script#home(type="text/template")
+    div.page.home
+      h1 let's build some cool shit together
+      h2 Tristan Darwent
+      h3 Front-End Web/App Developer
+
+  script#about(type="text/template").
+    <div class="page about">{{{content}}}</div>
+
+  script#contact(type="text/template").
+    <div class="page contact">{{{content}}}</div>
+
+  // -----------------------------
+  // Libraries
+  // -----------------------------
+
+  script(type="text/javascript", src="http://code.jquery.com/jquery-2.1.1.min.js")
+
+  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js")
+
+  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js")
+
+  script(type="text/javascript", src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js")
+
+
+  // -----------------------------
+  // Application
+  // -----------------------------
+
+  script(type="text/javascript", src="assets/scripts/main.js")

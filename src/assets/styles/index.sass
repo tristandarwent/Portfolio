@@ -1,0 +1,217 @@
+
+// -----------------------------
+// Variables
+// -----------------------------
+
+// $color: #555
+// $lightColor: #efefef
+// $darkColor: #333
+
+
+// -----------------------------
+// Fonts
+// -----------------------------
+
+$mainheadingfont: "Plantagenet Cherokee", serif
+
+$headingsfont: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif
+
+$bodyfont: Constantia, serif
+
+$codefont: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace
+
+$linkfont: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif
+
+// -----------------------------
+// Mixins
+// -----------------------------
+
+@mixin full-background ($z)
+  position: fixed
+  min-height: 100%
+  min-width: 100%
+  width: auto 
+  height: auto
+  z-index: $z
+
+// -----------------------------
+// Header Styles
+// -----------------------------
+
+h1
+  font-family: $mainheadingfont
+  font-size: 2.333em
+
+h2 
+  font-family: $headingsfont
+  font-size: 2em
+
+h3 
+  font-family: $headingsfont
+  font-size: 1.333em
+
+h4 
+  font-family: $bodyfont
+  font-size: 1.222em
+
+h5 
+  font-family: $headingsfont
+  font-size: 1em
+
+h6
+  font-family: $headingsfont
+  font-size: 0.8em
+
+// -----------------------------
+// Global Styles
+// -----------------------------
+
+*
+  box-sizing: border-box
+
+html
+  height: 100%
+
+body
+  font-size: 112.5%
+  color: #fff
+  height: 100%
+
+div.wrapper
+  min-height: 100%
+  margin-bottom: -40px
+
+a
+  font-family: $linkfont
+  color: #fff
+  text-decoration: none
+  -webkit-transition: all 0.3s ease-in-out
+  -moz-transition: all 0.3s ease-in-out
+  transition: all 0.3s ease-in-out
+
+  &:hover
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff
+
+// -----------------------------
+// Background
+// -----------------------------
+
+video.bg-vid
+  @include full-background(-100)
+
+div.bg-cover
+  @include full-background(-90)
+  background-color: rgba(0, 0, 0, 0.7)
+
+// -----------------------------
+// App Specific
+// -----------------------------
+
+// .header, .main, .footer
+//   width: 100%
+//   display: block
+//   clear: both
+//   float: left
+
+// -----------------------------
+// Header
+// -----------------------------
+
+header
+  width: 100%
+  overflow: hidden
+
+  a.logo
+  
+    div
+      background-image: url(../images/logo.png)
+      width: 90px
+      height: 90px
+      background-size: contain
+      float: left
+
+// -----------------------------
+// Navigation
+// -----------------------------
+
+nav
+  padding-top: 35px
+  float: left
+
+  li
+    display: inline-block
+    margin-left: 40px
+
+ul.social
+  float: right
+  padding: 30px 35px 0 0
+  
+  li
+    display: inline-block
+
+    a
+      display: block
+      width: 35px
+      height: 35px
+      background: url("../images/social-sprites.png") no-repeat
+      background-size: 100%
+      transition: none
+
+      &.twitter
+        background-position: 0 0
+
+        &:hover
+          background-position: 0 -35px
+
+      &.github
+        background-position: 0 -70px
+
+        &:hover
+          background-position: 0 -105px
+
+      &.linkedin
+        background-position: 0 -140px
+
+        &:hover
+          background-position: 0 -175px
+
+      &.email
+        background-position: 0 -210px
+
+        &:hover
+          background-position: 0 -245px
+
+// -----------------------------
+// Main
+// -----------------------------
+
+div.main
+  max-width: 1160px
+  margin: 0 auto
+
+// -----------------------------
+// Home
+// -----------------------------
+
+div.home
+  text-align: center
+
+  h1
+    margin: 250px 0 220px 0
+
+  h2
+    margin-bottom: 5px 
+
+// -----------------------------
+// Footer
+// -----------------------------
+
+footer
+  height: 40px
+  background-color: #000
+  width: 100%
+
+  h6
+    margin: 15px 15px 0 0
+    float: right
+    color: #fff
