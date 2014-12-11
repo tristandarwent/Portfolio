@@ -45,7 +45,7 @@ html
 
           li: a(href="/") Home
 
-          li: a(href="/contact") Portfolio
+          li: a(href="/portfolio") Portfolio
 
           li: a(href="/about") About
 
@@ -57,7 +57,7 @@ html
 
         li: a.linkedin(href="http://www.linkedin.com/pub/tristan-darwent/91/535/388" target="_blank")
 
-        li: a.email(href="mailto:tristandarwent@gmail.com" target="_blank")
+        li: a.email(href="mailto:tristandarwent@gmail.com")
 
     div.main
 
@@ -74,6 +74,10 @@ html
       h1 let's build some cool shit together
       h2 Tristan Darwent
       h3 Front-End Web/App Developer
+
+  script#portfolio(type="text/template")
+    div.page.portfolio
+      h1.title My Work
 
   script#about(type="text/template")
     div.page.about
@@ -97,9 +101,6 @@ html
         | You can contact me at any time at 
         a(href="mailto:tristandarwent@gmail.com") tristandarwent@gmail.com
         | .
-
-  script#contact(type="text/template").
-    <div class="page contact">{{{content}}}</div>
 
   // -----------------------------
   // Libraries

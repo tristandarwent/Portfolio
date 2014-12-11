@@ -148,37 +148,39 @@ ul.social {
 /* line 155, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
 div.main {
   max-width: 1160px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 30px; }
 
-/* line 159, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 161, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
 h2.title {
   text-align: center;
-  margin: 20px 0 50px 0; }
+  padding: 20px 0 50px 0; }
 
-/* line 164, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 166, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
 div.home {
   text-align: center; }
-  /* line 167, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 169, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
   div.home h1 {
     margin: 250px 0 220px 0; }
-  /* line 170, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 172, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
   div.home h2 {
     margin-bottom: 5px; }
 
-/* line 176, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 184, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
 div.about p {
-  margin-bottom: 20px; }
-  /* line 179, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  margin-bottom: 15px; }
+  /* line 187, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
   div.about p a {
     font-family: Constantia, serif;
     text-decoration: underline; }
 
-/* line 184, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 192, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
 footer {
   height: 40px;
   background-color: #000;
   width: 100%; }
-  /* line 189, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 197, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
   footer h6 {
     margin: 15px 15px 0 0;
     float: right;

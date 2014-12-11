@@ -13,9 +13,9 @@ jQuery(function($) {
 
     // Our Routes
     routes: {
-      '' : 'home',
-      'about': 'about',
-      'contact': 'contact'
+      '': 'home',
+      'portfolio': 'portfolio',
+      'about': 'about'
     },
 
     // Home Route
@@ -24,16 +24,16 @@ jQuery(function($) {
       App.views['home'].render();
     },
 
+    // Portfolio Route
+    portfolio: function() {
+      console.log('Navigating to Portfolio Page');
+      App.views['portfolio'].render();
+    },
+
     // About Route
     about: function() {
       console.log('Navigating to About Page');
       App.views['about'].render();
-    },
-
-    // Contact Route
-    contact: function() {
-      console.log('Navigating to Contact Page');
-      App.views['contact'].render();
     }
 
   });
@@ -50,8 +50,8 @@ jQuery(function($) {
     // Setup views
     this.views = {
       home: new HomeView(),
-      about: new AboutView(),
-      contact: new ContactView()
+      portfolio: new PortfolioView(),
+      about: new AboutView()
     };
 
   };
@@ -78,6 +78,45 @@ jQuery(function($) {
       // Some page data
       this.model.set({
         content: '<h1>Home Page</h1>'
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+
+  // -----------------------------
+  // Portfolio View
+  // -----------------------------
+
+  var PortfolioView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#portfolio',
+
+    // Initialize View
+    initialize: function() {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      // Some page data
+      this.model.set({
+        content: '<h1>Portfolio Page</h1>'
       });
 
     },
@@ -135,45 +174,6 @@ jQuery(function($) {
   });
 
   // -----------------------------
-  // Contact View
-  // -----------------------------
-
-  var ContactView = Backbone.View.extend({
-
-    // Our Container Element
-    el: $('.main'),
-
-    // Our template ID
-    template: '#contact',
-
-    // Initialize View
-    initialize: function() {
-
-      // Setup our template and start our model
-      this.template = Handlebars.compile($(this.template).html());
-      this.model = new Backbone.Model({});
-
-      // Some page data
-      this.model.set({
-        content: '<h1>Contact Page</h1>'
-      });
-
-    },
-
-    // Our Render Function
-    render: function() {
-
-      // Get data and render our template
-      var data = this.model.toJSON();
-      var html = this.template(data);
-
-      // Set update the containers HTML
-      $(this.el).html(html);
-    }
-
-  });
-
-  // -----------------------------
   // Start Application
   // -----------------------------
 
@@ -188,9 +188,16 @@ jQuery(function($) {
 
   $(document).delegate('a', 'click', function(e) {
     e.preventDefault();
-    App.router.navigate($(this).attr('href'), { trigger: true });
+
+    var link = $(this).attr('href');
+    var externalLink = link.indexOf('http://');
+
+    if (externalLink === -1){
+      App.router.navigate(link, { trigger: true });  
+    } else {
+      window.location.href = link;
+    }
 
   });
-
-
+  
 });
