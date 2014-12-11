@@ -29,15 +29,25 @@ html
 
     source(src="/assets/videos/bg-video.ogv" type="video/ogg")
 
+  //- Background Cover Div - that covers whole screen over video, used to adjust brightness of background video
+
   div.bg-cover
+
+  //- Main Wrapper
 
   div.wrapper
 
+    //- Header
+
     header
+
+      //- Logo
 
       a.logo.link(href="/")
 
         div
+
+      //- Main Navigation
 
       nav
 
@@ -49,6 +59,8 @@ html
 
           li: a.link(href="/about") About
 
+      //- Social Icons
+
       ul.social
 
         li: a.twitter(href="https://twitter.com/tristandarwent" target="_blank")
@@ -59,7 +71,11 @@ html
 
         li: a.email(href="mailto:tristandarwent@gmail.com")
 
+    //- Main Content Div
+
     div.main
+
+  //- Footer
 
   footer
 
@@ -68,6 +84,8 @@ html
   // -----------------------------
   // Templates
   // -----------------------------
+
+  //- Home Template
 
   script#home(type="text/template")
 
@@ -79,13 +97,19 @@ html
 
       h3 Front-End Web/App Developer
 
+  //- Portfolio Template
+
   script#portfolio(type="text/template")
 
     div.page.portfolio
 
       h2.title My Work
 
+      //- Loops through each piece
+
       | {{#each piece}}
+
+      //- If it is the first piece, make it promo
 
       | {{#if @first}}
 
@@ -94,6 +118,8 @@ html
         div.overlay
           
           h3 {{deck}}
+
+      //- Else, place it normally
 
       | {{else}}
 
@@ -107,6 +133,7 @@ html
 
       | {{/each}}
 
+  //- Portfolio Detail Template
 
   script#portfolioDetail(type="text/template")
 
@@ -130,17 +157,23 @@ html
 
       p {{piece.description}}
 
+      //- If piece has a site link
+
       | {{#if piece.site_link}}
 
       a.button(href="{{piece.site_link}}" target="_blank") View Site
 
       | {{/if}}
 
+      //- If piece has a github link
+
       | {{#if piece.github_link}}
 
       a.button(href="{{piece.github_link}}" target="_blank") View On Github
 
       | {{/if}}
+
+  //- About Template
 
   script#about(type="text/template")
 

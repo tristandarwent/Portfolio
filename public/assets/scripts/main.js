@@ -1,3 +1,4 @@
+// Stores all the portfolio piece data
 var portfolioPieces = [
 {
   'name': 'AppSeed',
@@ -193,7 +194,7 @@ jQuery(function($) {
       this.template = Handlebars.compile($(this.template).html());
       this.model = new Backbone.Model({});
 
-
+      // Sends portfolio piece data to Portfolio View
       this.model.set({
         piece: portfolioPieces
       });
@@ -237,14 +238,17 @@ jQuery(function($) {
     // Our Render Function
     render: function(url) {
 
+      // Stores position of piece needed to send
       var detail;
 
+      // Loops through Portfolio Pieces looking for piece that matches the url
       for (portfolioPiece in portfolioPieces) {
         if (portfolioPieces[portfolioPiece].url === url) {
           detail = portfolioPiece;
         }
       }
 
+      // Sends portfolio piece data to Portfolio Detail View
       this.model.set({
         piece: portfolioPieces[detail]
       });
@@ -256,8 +260,8 @@ jQuery(function($) {
       // Set update the containers HTML
       $(this.el).html(html);
 
+      // Changes the main image on the portfolio details page when thumbnails are clicked
       $('.thumbnail').click(function(){
-        console.log("CLICKED");
         var bg = $(this).css('background-image');
         $('.imageHolder').css('background-image', bg);
       });
@@ -313,6 +317,7 @@ jQuery(function($) {
   // Navigation Links
   // -----------------------------
 
+  // Allows external links to work
   $(document).delegate('a', 'click', function(e) {
     if( $(this).hasClass('link') ) {
       e.preventDefault();

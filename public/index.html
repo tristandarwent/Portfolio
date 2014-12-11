@@ -49,11 +49,13 @@
   </script>
   <script id="portfolio" type="text/template">
     <div class="page portfolio">
-      <h2 class="title">My Work</h2>{{#each piece}}
+      <h2 class="title">My Work</h2>
+      {{#each piece}}
       {{#if @first}}<a href="portfolio-detail/{{url}}" style="background-image: url(assets/images/{{image}})" class="portfolio-piece promo link">
         <div class="overlay">
           <h3>{{deck}}</h3>
-        </div></a>{{else}}<a href="portfolio-detail/{{url}}" style="background-image: url(assets/images/{{image}})" class="portfolio-piece link">
+        </div></a>
+      {{else}}<a href="portfolio-detail/{{url}}" style="background-image: url(assets/images/{{image}})" class="portfolio-piece link">
         <div class="overlay">
           <h3>{{deck}}</h3>
         </div></a>{{/if}}
@@ -71,7 +73,8 @@
         <div style="background-image: url(../assets/images/{{piece.screen2}})" class="thumbnail"></div>
         <div style="background-image: url(../assets/images/{{piece.screen3}})" class="thumbnail"></div>
       </div>
-      <p>{{piece.description}}</p>{{#if piece.site_link}}<a href="{{piece.site_link}}" target="_blank" class="button">View Site</a>{{/if}}
+      <p>{{piece.description}}</p>
+      {{#if piece.site_link}}<a href="{{piece.site_link}}" target="_blank" class="button">View Site</a>{{/if}}
       {{#if piece.github_link}}<a href="{{piece.github_link}}" target="_blank" class="button">View On Github</a>{{/if}}
     </div>
   </script>

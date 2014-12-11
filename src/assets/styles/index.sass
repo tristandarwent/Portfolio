@@ -1,13 +1,3 @@
-
-// -----------------------------
-// Variables
-// -----------------------------
-
-// $color: #555
-// $lightColor: #efefef
-// $darkColor: #333
-
-
 // -----------------------------
 // Fonts
 // -----------------------------
@@ -48,6 +38,7 @@ $linkfont: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif
   -moz-transition: all 0.3s ease-in-out
   transition: all 0.3s ease-in-out
 
+// Button Style for block style buttons
 @mixin button-style
   display: block
   background-color: rgba(0, 0, 0, 0.7)
@@ -132,16 +123,6 @@ div.bg-cover
   background-color: rgba(0, 0, 0, 0.7)
 
 // -----------------------------
-// App Specific
-// -----------------------------
-
-// .header, .main, .footer
-//   width: 100%
-//   display: block
-//   clear: both
-//   float: left
-
-// -----------------------------
 // Header
 // -----------------------------
 
@@ -155,14 +136,11 @@ header
       background: url(../images/logo-sprites.png) no-repeat
       background-size: 100%
       background-position: 0 0
-      // background-image: url(../images/logo.png)
       width: 90px
       height: 90px
-      // background-size: contain
       float: left
 
       &:hover
-        // width: 100px
         background-position: 0 -180px
 
 // -----------------------------
@@ -253,13 +231,11 @@ div.portfolio
     margin-bottom: 20px
     width: 48.5%
     height: 140px
-    // background-image: url(../images/appseedBanner.jpg)
     background-repeat: no-repeat
     background-position: top center
     float: right
 
     &.promo
-      // margin-top: 45px
       width: 100%
       float: left
 
@@ -311,8 +287,7 @@ div.portfolioDetail
 
       &:last-child
         margin-right: 0
-
-
+        
   p
     margin: 25px 0 
 
@@ -322,9 +297,7 @@ div.portfolioDetail
 
     &:hover 
       color: #000
-      background-color: #fff
-      
-    
+      background-color: #fff    
 
 // -----------------------------
 // About
