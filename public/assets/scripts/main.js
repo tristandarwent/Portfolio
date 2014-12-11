@@ -187,17 +187,12 @@ jQuery(function($) {
   // -----------------------------
 
   $(document).delegate('a', 'click', function(e) {
-    e.preventDefault();
-
-    var link = $(this).attr('href');
-    var externalLink = link.indexOf('http://');
-
-    if (externalLink === -1){
-      App.router.navigate(link, { trigger: true });  
-    } else {
-      window.location.href = link;
+    if( $(this).hasClass('routeLink') ) {
+      e.preventDefault();
+      App.router.navigate($(this).attr('href'), { trigger: true });
     }
 
   });
-  
+
+
 });
