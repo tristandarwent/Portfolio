@@ -255,6 +255,13 @@ jQuery(function($) {
 
       // Set update the containers HTML
       $(this.el).html(html);
+
+      $('.thumbnail').click(function(){
+        console.log("CLICKED");
+        var bg = $(this).css('background-image');
+        $('.imageHolder').css('background-image', bg);
+      });
+
     }
 
   });
@@ -312,15 +319,6 @@ jQuery(function($) {
       App.router.navigate($(this).attr('href'), { trigger: true });
     }
 
-  });
-
-  // -----------------------------
-  // Thumbnail Images
-  // -----------------------------
-
-  $('.thumbnail').click(function(){
-    var bg = $(this).css('background-image');
-    $('.imageHolder').css('background-image', bg);
   });
 
 });
