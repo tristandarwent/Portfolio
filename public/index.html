@@ -49,7 +49,10 @@
   </script>
   <script id="portfolio" type="text/template">
     <div class="page portfolio">
-      <h1 class="title">My Work</h1>
+      <h2 class="title">My Work</h2>{{#each piece}}<a href="/{{id}}" style="background-image: url(assets/images/{{image}})" class="portfolio-piece promo">
+        <div class="overlay">
+          <h3>{{deck}}</h3>
+        </div></a>{{/each}}
     </div>
   </script>
   <script id="about" type="text/template">

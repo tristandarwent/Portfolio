@@ -26,6 +26,7 @@ $linkfont: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif
 // Mixins
 // -----------------------------
 
+// Sets the container to a full screen view in the background
 @mixin full-background ($z)
   position: fixed
   min-height: 100%
@@ -33,6 +34,19 @@ $linkfont: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif
   width: auto 
   height: auto
   z-index: $z
+
+// Styles for image overlays 
+@mixin overlay ($padding)
+  text-align: center;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  padding-top: $padding;
+  text-shadow: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 
 // -----------------------------
 // Typography Styles
@@ -191,10 +205,10 @@ ul.social
 // -----------------------------
 
 div.main
-  max-width: 1160px
+  max-width: 1000px
   margin: 0 auto
   overflow: hidden
-  padding: 0 30px
+  padding: 0 30px 75px
 
 h2.title
   text-align: center
@@ -214,13 +228,33 @@ div.home
     margin-bottom: 5px
 
 // -----------------------------
-// About
+// Portfolio
 // -----------------------------
 
 div.portfolio
-  
-  h2
-  
+
+  a.portfolio-piece
+    margin-top: 20px
+    width: 48.5%
+    height: 140px
+    // background-image: url(../images/appseedBanner.jpg)
+    background-repeat: no-repeat
+    background-position: top center
+    float: right
+
+    &.promo
+      // margin-top: 45px
+      width: 100%
+      float: left
+
+    &:nth-child(even) 
+      float: left
+
+  a:hover div.overlay
+    opacity: 1
+
+  div.overlay
+    @include overlay(55px)
 
 // -----------------------------
 // About

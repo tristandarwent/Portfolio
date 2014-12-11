@@ -1,3 +1,35 @@
+var portfolioPieces = [
+{
+  'name': 'AppSeed',
+  'deck': 'Prototyping App',
+  'image': 'appseedBanner.jpg',
+  'id': '1'
+}, {
+  'name': 'Marker',
+  'deck': 'Board Game App for iPhone',
+  'image': 'markerBanner.jpg',
+  'id': '2'
+}, {
+  'name': 'Pythios the Undefeated',
+  'deck': 'Mobile Game Jam Submission',
+  'image': 'pythiosBanner.jpg',
+  'id': '3'
+}, {
+  'name': 'The Rising Threat of Water Poverty',
+  'deck': 'Infographic Website',
+  'image': 'infographicBanner.jpg',
+  'id': '4'
+}, {
+  'name': 'Pizza Boy',
+  'deck': 'Responsive Pizza Website',
+  'image': 'pizzaBoyBanner.jpg',
+  'id': '5'
+}, {
+  'name': 'Arcturus V',
+  'deck': 'Web Board Game Prototype',
+  'image': 'arcturusBanner.jpg',
+  'id': '6'
+}];
 
 // -----------------------------
 // Wait for DOM Load
@@ -76,9 +108,9 @@ jQuery(function($) {
       this.model = new Backbone.Model({});
 
       // Some page data
-      this.model.set({
-        content: '<h1>Home Page</h1>'
-      });
+      // this.model.set({
+      //   content: '<h1>Home Page</h1>'
+      // });
 
     },
 
@@ -114,9 +146,9 @@ jQuery(function($) {
       this.template = Handlebars.compile($(this.template).html());
       this.model = new Backbone.Model({});
 
-      // Some page data
+
       this.model.set({
-        content: '<h1>Portfolio Page</h1>'
+        piece: portfolioPieces
       });
 
     },
@@ -154,9 +186,9 @@ jQuery(function($) {
       this.model = new Backbone.Model({});
 
       // Some page data
-      this.model.set({
-        content: '<h1>About Page</h1>'
-      });
+      // this.model.set({
+      //   content: '<h1>About Page</h1>'
+      // });
 
     },
 

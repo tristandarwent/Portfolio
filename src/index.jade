@@ -70,17 +70,36 @@ html
   // -----------------------------
 
   script#home(type="text/template")
+
     div.page.home
+
       h1 let's build some cool shit together
+
       h2 Tristan Darwent
+
       h3 Front-End Web/App Developer
 
   script#portfolio(type="text/template")
+
     div.page.portfolio
-      h1.title My Work
+
+      h2.title My Work
+
+      | {{#each piece}}
+
+      a.portfolio-piece.promo(href="/{{id}}" style="background-image: url(assets/images/{{image}})")
+
+        div.overlay
+        
+          h3 {{deck}}
+
+      | {{/each}}
+
 
   script#about(type="text/template")
+
     div.page.about
+
       h2.title Oh, hello.
 
       p I'm Tristan Darwent and I'm a developer. 
