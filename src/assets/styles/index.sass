@@ -35,7 +35,7 @@ $linkfont: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif
   z-index: $z
 
 // -----------------------------
-// Header Styles
+// Typography Styles
 // -----------------------------
 
 h1
@@ -61,6 +61,11 @@ h5
 h6
   font-family: $headingsfont
   font-size: 0.8em
+
+p 
+  font-family: $bodyfont
+  font-size: 1.1em
+  line-height: 1.75em
 
 // -----------------------------
 // Global Styles
@@ -189,6 +194,10 @@ div.main
   max-width: 1160px
   margin: 0 auto
 
+h2.title
+  text-align: center
+  margin: 20px 0 50px 0
+
 // -----------------------------
 // Home
 // -----------------------------
@@ -201,6 +210,19 @@ div.home
 
   h2
     margin-bottom: 5px 
+
+// -----------------------------
+// About
+// -----------------------------
+
+div.about
+  
+  p
+    margin-bottom: 20px
+
+    a
+      font-family: $bodyfont
+      text-decoration: underline
 
 // -----------------------------
 // Footer
