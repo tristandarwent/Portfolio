@@ -6,13 +6,13 @@
   <title>Tristan Darwent</title>
   <meta name="description" content="Tristan Darwent Portfolio Site">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
-  <link rel="shortcut icon" href="assets/images/logo.png">
-  <link rel="stylesheet" href="assets/styles/reset.css" type="text/css">
-  <link rel="stylesheet" href="assets/styles/main.css" type="text/css">
+  <link rel="shortcut icon" href="/assets/images/logo.png">
+  <link rel="stylesheet" href="/assets/styles/reset.css" type="text/css">
+  <link rel="stylesheet" href="/assets/styles/main.css" type="text/css">
   <body></body>
   <video autoplay loop class="bg-vid">
-    <source src="assets/videos/bg-video.mp4" type="video/mp4">
-    <source src="assets/videos/bg-video.ogv" type="video/ogg">
+    <source src="/assets/videos/bg-video.mp4" type="video/mp4">
+    <source src="/assets/videos/bg-video.ogv" type="video/ogg">
   </video>
   <div class="bg-cover"></div>
   <div class="wrapper">
@@ -65,6 +65,14 @@
       <h2 class="title">{{piece.name}}</h2>
       <h3>{{piece.deck}}</h3>
       <h5>{{piece.role}}</h5>
+      <div style="background-image: url(../assets/images/{{piece.screen1}})" class="imageHolder"></div>
+      <div class="images">
+        <div style="background-image: url(../assets/images/{{piece.screen1}})" class="thumbnail"></div>
+        <div style="background-image: url(../assets/images/{{piece.screen2}})" class="thumbnail"></div>
+        <div style="background-image: url(../assets/images/{{piece.screen3}})" class="thumbnail"></div>
+      </div>
+      <p>{{piece.description}}</p>{{#if piece.site_link}}<a href="{{piece.site_link}}" target="_blank" class="button">View Site</a>{{/if}}
+      {{#if piece.github_link}}<a href="{{piece.github_link}}" target="_blank" class="button">View On Github</a>{{/if}}
     </div>
   </script>
   <script id="about" type="text/template">
@@ -98,5 +106,5 @@
   <!-- ------------------------------->
   <!-- Application-->
   <!-- ------------------------------->
-  <script type="text/javascript" src="assets/scripts/main.js"></script>
+  <script type="text/javascript" src="/assets/scripts/main.js"></script>
 </html>

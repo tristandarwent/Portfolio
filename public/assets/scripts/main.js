@@ -2,38 +2,74 @@ var portfolioPieces = [
 {
   'name': 'AppSeed',
   'deck': 'Prototyping App',
+  'description': 'AppSeed is an app that will turn your sketches into working prototypes. By taking photos of your sketches, AppSeed will recognize drawn shapes and allow you to move and manipulate them, turning them into buttons, text field, maps, and more.',
   'image': 'appseedBanner.jpg',
   'role': 'Android Developer',
+  'screen1': 'appseed1.png',
+  'screen2': 'appseed2.png',
+  'screen3': 'appseed3.png',
+  'site_link': '',
+  'github_link': '',
   'url': 'appseed'
 }, {
   'name': 'Marker',
   'deck': 'Board Game App for iPhone',
+  'description': 'Marker is a meetup application for the iPhone designed to help people who love to play board games meet new people to play with. It allows users to browse and create meetups that specify the date, time, and place where the meetup will be held, as well as what games they plan on playing. It uses the boardgamegeek.com API to allow users to check out details of games, and well as Parse to store all the user and meetup data on the backend.',
   'image': 'markerBanner.jpg',
   'role': 'Project Lead/Head Developer',
+  'screen1': 'markerScreen1.png',
+  'screen2': 'markerScreen2.png',
+  'screen3': 'markerScreen3.png',
+  'site_link': '',
+  'github_link': '',
   'url': 'marker'
 }, {
   'name': 'Pythios the Undefeated',
   'deck': 'Mobile Game Jam Submission',
+  'description': 'Pythios the Undefeated is a iPhone game created for the 2014 Great Canadian Appathon. It is a turn based strategy game where you play as a dragon fighting off enemy attackers. Between waves you can upgrade your abilities to help you stay alive as long as you can.',
   'image': 'pythiosBanner.jpg',
   'role': 'Project Lead/Head Developer',
+  'screen1': 'pythiosScreen1.png',
+  'screen2': 'pythiosScreen2.png',
+  'screen3': 'pythiosScreen3.png',
+  'site_link': '',
+  'github_link': '',
   'url': 'pythios'
 }, {
   'name': 'The Rising Threat of Water Poverty',
   'deck': 'Infographic Website',
+  'description': 'The Rising Threat of Water Poverty is a infographic style website designed to raise awareness of the severity of water poverty. It uses scrolling to trigger animations and graphics that display statistics about how this problem affects the world.',
   'image': 'infographicBanner.jpg',
   'role': 'Developer/Designer',
+  'screen1': 'waterScreen1.png',
+  'screen2': 'waterScreen2.png',
+  'screen3': 'waterScreen3.png',
+  'site_link': 'http://www.tristandarwent.com/links/infographic/',
+  'github_link': 'https://github.com/tristandarwent/Water-Poverty-Infographic.git',
   'url': 'infographic'
 }, {
   'name': 'Pizza Boy',
   'deck': 'Responsive Pizza Website',
+  'description': 'Pizza Boy is a simple restaurant website that demonstrates proper responsive behaviour It includes a home page, menu page, and contact page that all scale perfectly for desktop, tablet, and mobile screens.',
   'image': 'pizzaBoyBanner.jpg',
   'role': 'Developer/Designer',
+  'screen1': 'pizzaBoyScreen1.png',
+  'screen2': 'pizzaBoyScreen2.png',
+  'screen3': 'pizzaBoyScreen3.png',
+  'site_link': 'http://www.tristandarwent.com/links/pizzaboy/',
+  'github_link': 'https://github.com/tristandarwent/PizzaBoy.git',
   'url': 'pizzaboy'
 }, {
   'name': 'Arcturus V',
   'deck': 'Web Board Game Prototype',
+  'description': 'Arcturus V is a prototype board game made with Cocos2d-html5. It is a 2 player competitive game where you fight for land on a newly occupied planet, rich with resources. You draw cards which determine the actions you can take on the board.',
   'image': 'arcturusBanner.jpg',
   'role': 'Project Lead/Head Developer',
+  'screen1': 'arcturusScreen1.png',
+  'screen2': 'arcturusScreen2.png',
+  'screen3': 'arcturusScreen3.png',
+  'site_link': 'http://www.tristandarwent.com/links/arcturus_v/',
+  'github_link': 'https://github.com/tristandarwent/Arcturus-V.git',
   'url': 'arcturusv'
 }];
 
@@ -53,6 +89,8 @@ jQuery(function($) {
     routes: {
       '': 'home',
       'portfolio': 'portfolio',
+      'portfolio-detail' : 'portfolio',
+      'portfolio-detail/' : 'portfolio',
       'portfolio-detail/:id': 'portfolioDetail',
       'about': 'about'
     },
@@ -276,5 +314,13 @@ jQuery(function($) {
 
   });
 
+  // -----------------------------
+  // Thumbnail Images
+  // -----------------------------
+
+  $('.thumbnail').click(function(){
+    var bg = $(this).css('background-image');
+    $('.imageHolder').css('background-image', bg);
+  });
 
 });
