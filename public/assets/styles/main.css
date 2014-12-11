@@ -150,7 +150,7 @@ div.main {
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
-  padding: 0 30px 75px; }
+  padding: 0 30px 60px; }
 
 /* line 173, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
 h2.title {
@@ -169,7 +169,7 @@ div.home {
 
 /* line 190, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
 div.portfolio a.portfolio-piece {
-  margin-top: 20px;
+  margin-bottom: 20px;
   width: 48.5%;
   height: 140px;
   background-repeat: no-repeat;
@@ -180,7 +180,7 @@ div.portfolio a.portfolio-piece {
     width: 100%;
     float: left; }
   /* line 202, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
-  div.portfolio a.portfolio-piece:nth-child(even) {
+  div.portfolio a.portfolio-piece:nth-child(odd) {
     float: left; }
 /* line 205, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
 div.portfolio a:hover div.overlay {

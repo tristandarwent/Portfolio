@@ -3,32 +3,32 @@ var portfolioPieces = [
   'name': 'AppSeed',
   'deck': 'Prototyping App',
   'image': 'appseedBanner.jpg',
-  'id': '1'
+  'id': '6'
 }, {
   'name': 'Marker',
   'deck': 'Board Game App for iPhone',
   'image': 'markerBanner.jpg',
-  'id': '2'
+  'id': '5'
 }, {
   'name': 'Pythios the Undefeated',
   'deck': 'Mobile Game Jam Submission',
   'image': 'pythiosBanner.jpg',
-  'id': '3'
+  'id': '4'
 }, {
   'name': 'The Rising Threat of Water Poverty',
   'deck': 'Infographic Website',
   'image': 'infographicBanner.jpg',
-  'id': '4'
+  'id': '3'
 }, {
   'name': 'Pizza Boy',
   'deck': 'Responsive Pizza Website',
   'image': 'pizzaBoyBanner.jpg',
-  'id': '5'
+  'id': '2'
 }, {
   'name': 'Arcturus V',
   'deck': 'Web Board Game Prototype',
   'image': 'arcturusBanner.jpg',
-  'id': '6'
+  'id': '1'
 }];
 
 // -----------------------------

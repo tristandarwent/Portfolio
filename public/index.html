@@ -49,10 +49,15 @@
   </script>
   <script id="portfolio" type="text/template">
     <div class="page portfolio">
-      <h2 class="title">My Work</h2>{{#each piece}}<a href="/{{id}}" style="background-image: url(assets/images/{{image}})" class="portfolio-piece promo">
+      <h2 class="title">My Work</h2>{{#each piece}}
+      {{#if @first}}<a href="/{{id}}" style="background-image: url(assets/images/{{image}})" class="portfolio-piece promo">
         <div class="overlay">
           <h3>{{deck}}</h3>
-        </div></a>{{/each}}
+        </div></a>{{else}}<a href="/{{id}}" style="background-image: url(assets/images/{{image}})" class="portfolio-piece">
+        <div class="overlay">
+          <h3>{{deck}}</h3>
+        </div></a>{{/if}}
+      {{/each}}
     </div>
   </script>
   <script id="about" type="text/template">

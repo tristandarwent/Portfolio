@@ -87,11 +87,23 @@ html
 
       | {{#each piece}}
 
+      | {{#if @first}}
+
       a.portfolio-piece.promo(href="/{{id}}" style="background-image: url(assets/images/{{image}})")
 
         div.overlay
-        
+          
           h3 {{deck}}
+
+      | {{else}}
+
+      a.portfolio-piece(href="/{{id}}" style="background-image: url(assets/images/{{image}})")
+
+        div.overlay
+          
+          h3 {{deck}}
+
+      | {{/if}}
 
       | {{/each}}
 
