@@ -47,6 +47,7 @@ jQuery(function($) {
     routes: {
       '': 'home',
       'portfolio': 'portfolio',
+      'portfolio-detail/:id': 'portfolioDetail',
       'about': 'about'
     },
 
@@ -60,6 +61,12 @@ jQuery(function($) {
     portfolio: function() {
       console.log('Navigating to Portfolio Page');
       App.views['portfolio'].render();
+    },
+
+    // Portfolio Detail Route
+    portfolioDetail: function(id) {
+      console.log('Navigating to Portfolio Detail Page');
+      App.views['portfolioDetail'].render({id:id});
     },
 
     // About Route
@@ -83,6 +90,7 @@ jQuery(function($) {
     this.views = {
       home: new HomeView(),
       portfolio: new PortfolioView(),
+      portfolioDetail: new PortfolioDetailView(),
       about: new AboutView()
     };
 
@@ -106,11 +114,6 @@ jQuery(function($) {
       // Setup our template and start our model
       this.template = Handlebars.compile($(this.template).html());
       this.model = new Backbone.Model({});
-
-      // Some page data
-      // this.model.set({
-      //   content: '<h1>Home Page</h1>'
-      // });
 
     },
 
@@ -167,6 +170,48 @@ jQuery(function($) {
   });
 
   // -----------------------------
+  // Portfolio Detail View
+  // -----------------------------
+
+  var PortfolioDetailView = Backbone.View.extend({
+
+    // Our Container Element
+    el: $('.main'),
+
+    // Our template ID
+    template: '#portfolioDetail',
+
+    // Initialize View
+    initialize: function(id) {
+
+      // Setup our template and start our model
+      this.template = Handlebars.compile($(this.template).html());
+      this.model = new Backbone.Model({});
+
+      for (portfolioPiece in portfolioPieces){
+        console.log(portfolioPiece);
+      }
+
+      this.model.set({
+        piece: portfolioPieces[0]
+      });
+
+    },
+
+    // Our Render Function
+    render: function() {
+
+      // Get data and render our template
+      var data = this.model.toJSON();
+      var html = this.template(data);
+
+      // Set update the containers HTML
+      $(this.el).html(html);
+    }
+
+  });
+
+  // -----------------------------
   // About View
   // -----------------------------
 
@@ -184,11 +229,6 @@ jQuery(function($) {
       // Setup our template and start our model
       this.template = Handlebars.compile($(this.template).html());
       this.model = new Backbone.Model({});
-
-      // Some page data
-      // this.model.set({
-      //   content: '<h1>About Page</h1>'
-      // });
 
     },
 
@@ -219,7 +259,7 @@ jQuery(function($) {
   // -----------------------------
 
   $(document).delegate('a', 'click', function(e) {
-    if( $(this).hasClass('routeLink') ) {
+    if( $(this).hasClass('link') ) {
       e.preventDefault();
       App.router.navigate($(this).attr('href'), { trigger: true });
     }

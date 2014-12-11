@@ -89,7 +89,7 @@ html
 
       | {{#if @first}}
 
-      a.portfolio-piece.promo(href="/{{id}}" style="background-image: url(assets/images/{{image}})")
+      a.portfolio-piece.promo.link(href="portfolio-detail/{{id}}" style="background-image: url(assets/images/{{image}})")
 
         div.overlay
           
@@ -97,7 +97,7 @@ html
 
       | {{else}}
 
-      a.portfolio-piece(href="/{{id}}" style="background-image: url(assets/images/{{image}})")
+      a.portfolio-piece.link(href="portfolio-detail/{{id}}" style="background-image: url(assets/images/{{image}})")
 
         div.overlay
           
@@ -107,6 +107,12 @@ html
 
       | {{/each}}
 
+
+  script#portfolioDetail(type="text/template")
+
+    div.page.portfolioDetail
+
+      h2.title {{piece.name}}
 
   script#about(type="text/template")
 

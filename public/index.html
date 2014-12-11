@@ -50,14 +50,19 @@
   <script id="portfolio" type="text/template">
     <div class="page portfolio">
       <h2 class="title">My Work</h2>{{#each piece}}
-      {{#if @first}}<a href="/{{id}}" style="background-image: url(assets/images/{{image}})" class="portfolio-piece promo">
+      {{#if @first}}<a href="portfolio-detail/{{id}}" style="background-image: url(assets/images/{{image}})" class="portfolio-piece promo link">
         <div class="overlay">
           <h3>{{deck}}</h3>
-        </div></a>{{else}}<a href="/{{id}}" style="background-image: url(assets/images/{{image}})" class="portfolio-piece">
+        </div></a>{{else}}<a href="portfolio-detail/{{id}}" style="background-image: url(assets/images/{{image}})" class="portfolio-piece link">
         <div class="overlay">
           <h3>{{deck}}</h3>
         </div></a>{{/if}}
       {{/each}}
+    </div>
+  </script>
+  <script id="portfolioDetail" type="text/template">
+    <div class="page portfolioDetail">
+      <h2 class="title">{{piece.name}}</h2>
     </div>
   </script>
   <script id="about" type="text/template">
