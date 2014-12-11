@@ -3,32 +3,38 @@ var portfolioPieces = [
   'name': 'AppSeed',
   'deck': 'Prototyping App',
   'image': 'appseedBanner.jpg',
-  'id': '6'
+  'role': 'Android Developer',
+  'url': 'appseed'
 }, {
   'name': 'Marker',
   'deck': 'Board Game App for iPhone',
   'image': 'markerBanner.jpg',
-  'id': '5'
+  'role': 'Project Lead/Head Developer',
+  'url': 'marker'
 }, {
   'name': 'Pythios the Undefeated',
   'deck': 'Mobile Game Jam Submission',
   'image': 'pythiosBanner.jpg',
-  'id': '4'
+  'role': 'Project Lead/Head Developer',
+  'url': 'pythios'
 }, {
   'name': 'The Rising Threat of Water Poverty',
   'deck': 'Infographic Website',
   'image': 'infographicBanner.jpg',
-  'id': '3'
+  'role': 'Developer/Designer',
+  'url': 'infographic'
 }, {
   'name': 'Pizza Boy',
   'deck': 'Responsive Pizza Website',
   'image': 'pizzaBoyBanner.jpg',
-  'id': '2'
+  'role': 'Developer/Designer',
+  'url': 'pizzaboy'
 }, {
   'name': 'Arcturus V',
   'deck': 'Web Board Game Prototype',
   'image': 'arcturusBanner.jpg',
-  'id': '1'
+  'role': 'Project Lead/Head Developer',
+  'url': 'arcturusv'
 }];
 
 // -----------------------------
@@ -64,9 +70,9 @@ jQuery(function($) {
     },
 
     // Portfolio Detail Route
-    portfolioDetail: function(id) {
+    portfolioDetail: function(url) {
       console.log('Navigating to Portfolio Detail Page');
-      App.views['portfolioDetail'].render({id:id});
+      App.views['portfolioDetail'].render(url);
     },
 
     // About Route
@@ -182,24 +188,28 @@ jQuery(function($) {
     template: '#portfolioDetail',
 
     // Initialize View
-    initialize: function(id) {
+    initialize: function() {
 
       // Setup our template and start our model
       this.template = Handlebars.compile($(this.template).html());
       this.model = new Backbone.Model({});
 
-      for (portfolioPiece in portfolioPieces){
-        console.log(portfolioPiece);
-      }
-
-      this.model.set({
-        piece: portfolioPieces[0]
-      });
-
     },
 
     // Our Render Function
-    render: function() {
+    render: function(url) {
+
+      var detail;
+
+      for (portfolioPiece in portfolioPieces) {
+        if (portfolioPieces[portfolioPiece].url === url) {
+          detail = portfolioPiece;
+        }
+      }
+
+      this.model.set({
+        piece: portfolioPieces[detail]
+      });
 
       // Get data and render our template
       var data = this.model.toJSON();
