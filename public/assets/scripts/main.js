@@ -1,6 +1,32 @@
 // Stores all the portfolio piece data
 var portfolioPieces = [
 {
+  'name': 'Boqs',
+  'deck': 'NFC Lockbox',
+  'description': 'Boqs is a modern lockbox that uses NFC technology. By simply tapping your NFC-enabled phone or tag you can unlock the Boqs. My co-founder Will Du and I created an inital prototype in late 2014 using Arduino and humidor box. We have since gone to win a $10,000 Venture Seed Fund to help grow this idea. We aim to create a fantastic looking lockbox that is easy to use and has useful and unique features.',
+  'image': 'boqsBanner.jpg',
+  'role': 'Co-Founder/Developer',
+  'screen1': 'appseed1.png',
+  'screen2': 'appseed2.png',
+  'screen3': 'appseed3.png',
+  'site_link': 'http://www.boqs.com',
+  'github_link': '',
+  'url': 'boqs'
+},
+{
+  'name': 'Safe Whistle',
+  'deck': 'Safety App',
+  'description': 'Safe Whistle is a native iOS app created to help keep runners safe when running alone and late at night. When the app is activated and the headphones are unplugged, the app will automatically send out a text message with their location to friends that the user has set.',
+  'image': 'safewhistleBanner.jpg',
+  'role': 'Developer',
+  'screen1': 'appseed1.png',
+  'screen2': 'appseed2.png',
+  'screen3': 'appseed3.png',
+  'site_link': '',
+  'github_link': '',
+  'url': 'safewhistle'
+},
+{
   'name': 'AppSeed',
   'deck': 'Prototyping App',
   'description': 'AppSeed is an app that will turn your sketches into working prototypes. By taking photos of your sketches, AppSeed will recognize drawn shapes and allow you to move and manipulate them, turning them into buttons, text field, maps, and more.',
@@ -48,18 +74,6 @@ var portfolioPieces = [
   'site_link': 'http://www.tristandarwent.com/links/infographic/',
   'github_link': 'https://github.com/tristandarwent/Water-Poverty-Infographic.git',
   'url': 'infographic'
-}, {
-  'name': 'Pizza Boy',
-  'deck': 'Responsive Pizza Website',
-  'description': 'Pizza Boy is a simple restaurant website that demonstrates proper responsive behaviour It includes a home page, menu page, and contact page that all scale perfectly for desktop, tablet, and mobile screens.',
-  'image': 'pizzaBoyBanner.jpg',
-  'role': 'Developer/Designer',
-  'screen1': 'pizzaBoyScreen1.png',
-  'screen2': 'pizzaBoyScreen2.png',
-  'screen3': 'pizzaBoyScreen3.png',
-  'site_link': 'http://www.tristandarwent.com/links/pizzaboy/',
-  'github_link': 'https://github.com/tristandarwent/PizzaBoy.git',
-  'url': 'pizzaboy'
 }, {
   'name': 'Arcturus V',
   'deck': 'Web Board Game Prototype',

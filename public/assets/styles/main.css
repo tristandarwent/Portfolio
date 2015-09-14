@@ -1,59 +1,59 @@
-/* line 43, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 55, stdin */
 h1 {
   font-family: "Plantagenet Cherokee", serif;
   font-size: 2.333em; }
 
-/* line 47, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 59, stdin */
 h2 {
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 2em; }
 
-/* line 51, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 63, stdin */
 h3 {
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 1.333em; }
 
-/* line 55, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 67, stdin */
 h4 {
   font-family: Constantia, serif;
   font-size: 1.222em; }
 
-/* line 59, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 71, stdin */
 h5 {
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 1em; }
 
-/* line 63, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 75, stdin */
 h6 {
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   font-size: 0.8em; }
 
-/* line 67, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 79, stdin */
 p {
   font-family: Constantia, serif;
   font-size: 1.1em;
   line-height: 1.65em; }
 
-/* line 73, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 88, stdin */
 * {
   box-sizing: border-box; }
 
-/* line 76, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 91, stdin */
 html {
   height: 100%; }
 
-/* line 79, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 94, stdin */
 body {
   font-size: 112.5%;
   color: #fff;
   height: 100%; }
 
-/* line 84, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 99, stdin */
 div.wrapper {
   min-height: 100%;
   margin-bottom: -40px; }
 
-/* line 88, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 103, stdin */
 a {
   font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
   color: #fff;
@@ -61,11 +61,11 @@ a {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
-  /* line 96, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 111, stdin */
   a:hover {
     text-shadow: 0 0 10px #fff, 0 0 10px #fff; }
 
-/* line 100, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 118, stdin */
 video.bg-vid {
   position: fixed;
   min-height: 100%;
@@ -74,7 +74,7 @@ video.bg-vid {
   height: auto;
   z-index: -100; }
 
-/* line 103, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 121, stdin */
 div.bg-cover {
   position: fixed;
   min-height: 100%;
@@ -84,39 +84,40 @@ div.bg-cover {
   z-index: -90;
   background-color: rgba(0, 0, 0, 0.7); }
 
-/* line 108, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 129, stdin */
 header {
   width: 100%;
   overflow: hidden; }
-  /* line 114, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 135, stdin */
   header a.logo div {
-    background: url(../images/logo-sprites.png) no-repeat;
+    background: url(../images/logoSprites.png) no-repeat;
     background-size: 100%;
     background-position: 0 0;
-    width: 90px;
-    height: 90px;
-    float: left; }
-    /* line 122, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+    width: 160px;
+    height: 64px;
+    float: left;
+    margin: 12px 0 0 18px; }
+    /* line 144, stdin */
     header a.logo div:hover {
-      background-position: 0 -180px; }
+      background-position: 0 -64px; }
 
-/* line 126, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 151, stdin */
 nav {
   padding-top: 35px;
   float: left; }
-  /* line 130, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 155, stdin */
   nav li {
     display: inline-block;
     margin-left: 40px; }
 
-/* line 134, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 159, stdin */
 ul.social {
   float: right;
   padding: 30px 35px 0 0; }
-  /* line 138, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 163, stdin */
   ul.social li {
     display: inline-block; }
-    /* line 141, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+    /* line 166, stdin */
     ul.social li a {
       display: block;
       width: 35px;
@@ -124,54 +125,54 @@ ul.social {
       background: url(../images/social-sprites.png) no-repeat;
       background-size: 100%;
       transition: none; }
-      /* line 149, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+      /* line 174, stdin */
       ul.social li a.twitter {
         background-position: 0 0; }
-        /* line 152, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+        /* line 177, stdin */
         ul.social li a.twitter:hover {
           background-position: 0 -35px; }
-      /* line 155, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+      /* line 180, stdin */
       ul.social li a.github {
         background-position: 0 -70px; }
-        /* line 158, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+        /* line 183, stdin */
         ul.social li a.github:hover {
           background-position: 0 -105px; }
-      /* line 161, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+      /* line 186, stdin */
       ul.social li a.linkedin {
         background-position: 0 -140px; }
-        /* line 164, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+        /* line 189, stdin */
         ul.social li a.linkedin:hover {
           background-position: 0 -175px; }
-      /* line 167, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+      /* line 192, stdin */
       ul.social li a.email {
         background-position: 0 -210px; }
-        /* line 170, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+        /* line 195, stdin */
         ul.social li a.email:hover {
           background-position: 0 -245px; }
 
-/* line 174, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 202, stdin */
 div.main {
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
   padding: 0 30px 60px; }
 
-/* line 180, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 208, stdin */
 h2.title {
   text-align: center;
   padding: 20px 0 50px 0; }
 
-/* line 185, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 216, stdin */
 div.home {
   text-align: center; }
-  /* line 188, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 219, stdin */
   div.home h1 {
     margin: 250px 0 220px 0; }
-  /* line 191, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 222, stdin */
   div.home h2 {
     margin-bottom: 5px; }
 
-/* line 197, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 231, stdin */
 div.portfolio a.portfolio-piece {
   margin-bottom: 20px;
   width: 48.5%;
@@ -179,17 +180,19 @@ div.portfolio a.portfolio-piece {
   background-repeat: no-repeat;
   background-position: top center;
   float: right; }
-  /* line 205, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 239, stdin */
   div.portfolio a.portfolio-piece.promo {
     width: 100%;
     float: left; }
-  /* line 209, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 243, stdin */
   div.portfolio a.portfolio-piece:nth-child(odd) {
     float: left; }
-/* line 212, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+
+/* line 246, stdin */
 div.portfolio a:hover div.overlay {
   opacity: 1; }
-/* line 215, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+
+/* line 249, stdin */
 div.portfolio div.overlay {
   text-align: center;
   opacity: 0;
@@ -202,16 +205,19 @@ div.portfolio div.overlay {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
-/* line 221, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 258, stdin */
 div.portfolioDetail h2, div.portfolioDetail h3, div.portfolioDetail h5 {
   text-align: left; }
-/* line 224, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+
+/* line 261, stdin */
 div.portfolioDetail h2 {
   padding-bottom: 10px; }
-/* line 227, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+
+/* line 264, stdin */
 div.portfolioDetail h3 {
   padding-bottom: 12px; }
-/* line 230, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+
+/* line 267, stdin */
 div.portfolioDetail div.imageHolder {
   width: 100%;
   height: 400px;
@@ -219,11 +225,12 @@ div.portfolioDetail div.imageHolder {
   background-repeat: no-repeat;
   background-position: center;
   margin-top: 30px; }
-/* line 238, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+
+/* line 275, stdin */
 div.portfolioDetail div.images {
   margin-top: 30px;
   text-align: center; }
-  /* line 242, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 279, stdin */
   div.portfolioDetail div.images div {
     width: 75px;
     height: 75px;
@@ -233,13 +240,15 @@ div.portfolioDetail div.images {
     cursor: pointer;
     display: inline-block;
     margin-right: 15px; }
-    /* line 252, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+    /* line 289, stdin */
     div.portfolioDetail div.images div:last-child {
       margin-right: 0; }
-/* line 255, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+
+/* line 292, stdin */
 div.portfolioDetail p {
   margin: 25px 0; }
-/* line 258, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+
+/* line 295, stdin */
 div.portfolioDetail a.button {
   display: block;
   background-color: rgba(0, 0, 0, 0.7);
@@ -249,25 +258,25 @@ div.portfolioDetail a.button {
   text-shadow: none;
   text-align: center;
   margin-bottom: 15px; }
-  /* line 262, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 299, stdin */
   div.portfolioDetail a.button:hover {
     color: #000;
     background-color: #fff; }
 
-/* line 269, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 309, stdin */
 div.about p {
   margin-bottom: 15px; }
-  /* line 272, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 312, stdin */
   div.about p a {
     font-family: Constantia, serif;
     text-decoration: underline; }
 
-/* line 277, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+/* line 320, stdin */
 footer {
   height: 40px;
   background-color: #000;
   width: 100%; }
-  /* line 282, /Users/tristandarwent/Documents/School/Javascript/Assignment 3/src/assets/styles/index.sass */
+  /* line 325, stdin */
   footer h6 {
     margin: 15px 15px 0 0;
     float: right;
