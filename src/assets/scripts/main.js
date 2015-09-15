@@ -1,4 +1,5 @@
 // Stores all the portfolio piece data
+
 var portfolioPieces = [
 {
   'name': 'Boqs',
