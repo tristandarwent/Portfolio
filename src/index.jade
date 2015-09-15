@@ -171,6 +171,14 @@ html
 
       | {{/if}}
 
+      //- If piece has a video link
+
+      | {{#if piece.video_link}}
+
+      a.button(href="{{piece.video_link}}" target="_blank") View Video
+
+      | {{/if}}
+
   //- About Template
 
   script#about(type="text/template")
