@@ -155,8 +155,7 @@ div.main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 30px 40px;
-  overflow: hidden;
-  background: rgba(0, 255, 0, 0.2); }
+  overflow: hidden; }
 
 /* line 217, src/assets/styles/index.sass */
 h2.title {
@@ -166,9 +165,19 @@ h2.title {
 /* line 225, src/assets/styles/index.sass */
 div.home {
   text-align: center;
-  background: red; }
+  display: flex;
+  flex-direction: column; }
+  /* line 234, src/assets/styles/index.sass */
+  div.home h1 {
+    margin-top: auto; }
+  /* line 239, src/assets/styles/index.sass */
+  div.home h2 {
+    margin-top: auto; }
+  /* line 244, src/assets/styles/index.sass */
+  div.home h3 {
+    margin: 5px 0 20px; }
 
-/* line 242, src/assets/styles/index.sass */
+/* line 253, src/assets/styles/index.sass */
 div.portfolio a.portfolio-piece {
   margin-bottom: 20px;
   width: 48.5%;
@@ -176,19 +185,19 @@ div.portfolio a.portfolio-piece {
   background-repeat: no-repeat;
   background-position: top center;
   float: right; }
-  /* line 250, src/assets/styles/index.sass */
+  /* line 261, src/assets/styles/index.sass */
   div.portfolio a.portfolio-piece.promo {
     width: 100%;
     float: left; }
-  /* line 254, src/assets/styles/index.sass */
+  /* line 265, src/assets/styles/index.sass */
   div.portfolio a.portfolio-piece:nth-child(odd) {
     float: left; }
 
-/* line 257, src/assets/styles/index.sass */
+/* line 268, src/assets/styles/index.sass */
 div.portfolio a:hover div.overlay {
   opacity: 1; }
 
-/* line 260, src/assets/styles/index.sass */
+/* line 271, src/assets/styles/index.sass */
 div.portfolio div.overlay {
   text-align: center;
   opacity: 0;
@@ -201,19 +210,19 @@ div.portfolio div.overlay {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
-/* line 269, src/assets/styles/index.sass */
+/* line 280, src/assets/styles/index.sass */
 div.portfolioDetail h2, div.portfolioDetail h3, div.portfolioDetail h5 {
   text-align: left; }
 
-/* line 272, src/assets/styles/index.sass */
+/* line 283, src/assets/styles/index.sass */
 div.portfolioDetail h2 {
   padding-bottom: 10px; }
 
-/* line 275, src/assets/styles/index.sass */
+/* line 286, src/assets/styles/index.sass */
 div.portfolioDetail h3 {
   padding-bottom: 12px; }
 
-/* line 278, src/assets/styles/index.sass */
+/* line 289, src/assets/styles/index.sass */
 div.portfolioDetail div.imageHolder {
   width: 100%;
   height: 400px;
@@ -222,11 +231,11 @@ div.portfolioDetail div.imageHolder {
   background-position: center;
   margin-top: 30px; }
 
-/* line 286, src/assets/styles/index.sass */
+/* line 297, src/assets/styles/index.sass */
 div.portfolioDetail div.images {
   margin-top: 30px;
   text-align: center; }
-  /* line 290, src/assets/styles/index.sass */
+  /* line 301, src/assets/styles/index.sass */
   div.portfolioDetail div.images div {
     width: 75px;
     height: 75px;
@@ -236,15 +245,15 @@ div.portfolioDetail div.images {
     cursor: pointer;
     display: inline-block;
     margin-right: 15px; }
-    /* line 300, src/assets/styles/index.sass */
+    /* line 311, src/assets/styles/index.sass */
     div.portfolioDetail div.images div:last-child {
       margin-right: 0; }
 
-/* line 303, src/assets/styles/index.sass */
+/* line 314, src/assets/styles/index.sass */
 div.portfolioDetail p {
   margin: 25px 0; }
 
-/* line 306, src/assets/styles/index.sass */
+/* line 317, src/assets/styles/index.sass */
 div.portfolioDetail a.button {
   display: block;
   background-color: rgba(0, 0, 0, 0.7);
@@ -254,97 +263,97 @@ div.portfolioDetail a.button {
   text-shadow: none;
   text-align: center;
   margin-bottom: 15px; }
-  /* line 310, src/assets/styles/index.sass */
+  /* line 321, src/assets/styles/index.sass */
   div.portfolioDetail a.button:hover {
     color: #000;
     background-color: #fff; }
 
-/* line 320, src/assets/styles/index.sass */
+/* line 331, src/assets/styles/index.sass */
 div.about p {
   margin-bottom: 15px; }
-  /* line 323, src/assets/styles/index.sass */
+  /* line 334, src/assets/styles/index.sass */
   div.about p a {
     font-family: Constantia, serif;
     text-decoration: underline; }
 
-/* line 331, src/assets/styles/index.sass */
+/* line 342, src/assets/styles/index.sass */
 footer {
   height: 40px;
   background-color: #000;
   width: 100%;
   padding: 15px 15px 0; }
-  /* line 337, src/assets/styles/index.sass */
+  /* line 348, src/assets/styles/index.sass */
   footer ul.social {
     float: left;
     display: none; }
-  /* line 341, src/assets/styles/index.sass */
+  /* line 352, src/assets/styles/index.sass */
   footer h6 {
     float: right;
     color: #fff; }
 
 @media only screen and (max-width: 767px) {
-  /* line 354, src/assets/styles/index.sass */
+  /* line 365, src/assets/styles/index.sass */
   div.wrapper {
     margin-bottom: -65px; }
-  /* line 357, src/assets/styles/index.sass */
+  /* line 368, src/assets/styles/index.sass */
   div.main {
     padding-bottom: 65px; }
-  /* line 360, src/assets/styles/index.sass */
+  /* line 371, src/assets/styles/index.sass */
   nav {
     float: right; }
-    /* line 363, src/assets/styles/index.sass */
+    /* line 374, src/assets/styles/index.sass */
     nav li {
       margin-left: 0;
       margin-right: 40px; }
-  /* line 369, src/assets/styles/index.sass */
+  /* line 380, src/assets/styles/index.sass */
   header ul.social {
     display: none; }
-  /* line 372, src/assets/styles/index.sass */
+  /* line 383, src/assets/styles/index.sass */
   footer {
     height: 65px; }
-    /* line 375, src/assets/styles/index.sass */
+    /* line 386, src/assets/styles/index.sass */
     footer ul.social {
       display: block; }
-    /* line 378, src/assets/styles/index.sass */
+    /* line 389, src/assets/styles/index.sass */
     footer h6 {
       margin-top: 13px; } }
 
 @media only screen and (max-width: 479px) {
-  /* line 387, src/assets/styles/index.sass */
+  /* line 398, src/assets/styles/index.sass */
   div.wrapper {
     margin-bottom: -97px; }
-  /* line 390, src/assets/styles/index.sass */
+  /* line 401, src/assets/styles/index.sass */
   div.main {
     padding-bottom: 97px; }
-  /* line 397, src/assets/styles/index.sass */
+  /* line 408, src/assets/styles/index.sass */
   header a.logo div {
     float: none;
     margin: 15px auto; }
-  /* line 401, src/assets/styles/index.sass */
+  /* line 412, src/assets/styles/index.sass */
   nav {
     float: none;
     margin: 15px auto;
     text-align: center; }
-    /* line 406, src/assets/styles/index.sass */
+    /* line 417, src/assets/styles/index.sass */
     nav li {
       margin-right: 0; }
-      /* line 409, src/assets/styles/index.sass */
+      /* line 420, src/assets/styles/index.sass */
       nav li:first-child {
         margin-right: 30px; }
-  /* line 412, src/assets/styles/index.sass */
+  /* line 423, src/assets/styles/index.sass */
   footer {
     height: 97px; }
-    /* line 415, src/assets/styles/index.sass */
+    /* line 426, src/assets/styles/index.sass */
     footer ul.social {
       float: none;
       text-align: center; }
-      /* line 419, src/assets/styles/index.sass */
+      /* line 430, src/assets/styles/index.sass */
       footer ul.social li {
         margin-right: 10px; }
-        /* line 422, src/assets/styles/index.sass */
+        /* line 433, src/assets/styles/index.sass */
         footer ul.social li:last-child {
           margin-right: 0; }
-    /* line 425, src/assets/styles/index.sass */
+    /* line 436, src/assets/styles/index.sass */
     footer h6 {
       float: none;
       text-align: center;

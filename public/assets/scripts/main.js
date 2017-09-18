@@ -217,6 +217,12 @@ jQuery(function($) {
 
       // Set update the containers HTML
       $(this.el).html(html);
+
+      $('div.page.home').height($(window).height() - $('header').height() - $('footer').outerHeight(true) + 'px');
+
+      window.onresize = function() {
+        $('div.page.home').height($(window).height() - $('header').height() - $('footer').outerHeight(true) + 'px');
+      }
     }
 
   });
