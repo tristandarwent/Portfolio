@@ -9,6 +9,7 @@ var sass      = require('gulp-sass');
 var jade      = require('gulp-jade');
 var imagemin  = require('gulp-imagemin');
 var rename    = require('gulp-rename');
+var livereload = require('gulp-livereload');
 
 // ------------------------------------
 // Paths
@@ -33,7 +34,7 @@ gulp.task('default', ['styles', 'scripts', 'images', 'files', 'templates']);
 // ------------------------------------
 
 gulp.task('watch', function() {
-
+  livereload.listen();
   gulp.watch(paths.styles, ['styles']);
   gulp.watch(paths.scripts, ['scripts']);
   gulp.watch(paths.images, ['images']);
@@ -52,6 +53,7 @@ gulp.task('styles', function() {
     .pipe(sass({ errLogToConsole: true, sourceComments : 'normal' }))
     .pipe(rename('main.css'))
     .pipe(gulp.dest('./public/assets/styles/'))
+    .pipe(livereload());
 
 });
 
@@ -63,6 +65,7 @@ gulp.task('scripts', function() {
 
   gulp.src(paths.scripts)
     .pipe(gulp.dest('./public/assets/scripts/'))
+    .pipe(livereload());
 
 });
 
@@ -75,6 +78,7 @@ gulp.task('images', function() {
   gulp.src(paths.images)
     .pipe(imagemin())
     .pipe(gulp.dest('./public/assets/images/'))
+    .pipe(livereload());
 
 });
 
@@ -86,6 +90,7 @@ gulp.task('files', function() {
 
   gulp.src(paths.files)
     .pipe(gulp.dest('./public/assets/files/'))
+    .pipe(livereload());
 
 });
 
@@ -98,6 +103,7 @@ gulp.task('templates', function() {
   gulp.src(paths.templates)
     .pipe(jade({ pretty: true }))
     .pipe(gulp.dest('./public/'))
+    .pipe(livereload());
 
 });
 

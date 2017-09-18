@@ -100,79 +100,79 @@ header {
     /* line 144, src/assets/styles/index.sass */
     header a.logo div:hover {
       background-position: 0 -64px; }
+  /* line 147, src/assets/styles/index.sass */
+  header ul.social {
+    float: right;
+    margin: 30px 35px 0 0; }
 
-/* line 151, src/assets/styles/index.sass */
+/* line 155, src/assets/styles/index.sass */
 nav {
-  padding-top: 35px;
+  margin-top: 35px;
   float: left; }
-  /* line 155, src/assets/styles/index.sass */
+  /* line 159, src/assets/styles/index.sass */
   nav li {
     display: inline-block;
     margin-left: 40px; }
 
-/* line 159, src/assets/styles/index.sass */
-ul.social {
-  float: right;
-  padding: 30px 35px 0 0; }
-  /* line 163, src/assets/styles/index.sass */
-  ul.social li {
-    display: inline-block; }
-    /* line 166, src/assets/styles/index.sass */
-    ul.social li a {
-      display: block;
-      width: 35px;
-      height: 35px;
-      background: url(../images/social-sprites.png) no-repeat;
-      background-size: 100%;
-      transition: none; }
-      /* line 174, src/assets/styles/index.sass */
-      ul.social li a.twitter {
-        background-position: 0 0; }
-        /* line 177, src/assets/styles/index.sass */
-        ul.social li a.twitter:hover {
-          background-position: 0 -35px; }
-      /* line 180, src/assets/styles/index.sass */
-      ul.social li a.github {
-        background-position: 0 -70px; }
-        /* line 183, src/assets/styles/index.sass */
-        ul.social li a.github:hover {
-          background-position: 0 -105px; }
-      /* line 186, src/assets/styles/index.sass */
-      ul.social li a.linkedin {
-        background-position: 0 -140px; }
-        /* line 189, src/assets/styles/index.sass */
-        ul.social li a.linkedin:hover {
-          background-position: 0 -175px; }
-      /* line 192, src/assets/styles/index.sass */
-      ul.social li a.email {
-        background-position: 0 -210px; }
-        /* line 195, src/assets/styles/index.sass */
-        ul.social li a.email:hover {
-          background-position: 0 -245px; }
+/* line 165, src/assets/styles/index.sass */
+ul.social li {
+  display: inline-block; }
+  /* line 168, src/assets/styles/index.sass */
+  ul.social li a {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url(../images/social-sprites.png) no-repeat;
+    background-size: 100%;
+    transition: none; }
+    /* line 176, src/assets/styles/index.sass */
+    ul.social li a.twitter {
+      background-position: 0 0; }
+      /* line 179, src/assets/styles/index.sass */
+      ul.social li a.twitter:hover {
+        background-position: 0 -35px; }
+    /* line 182, src/assets/styles/index.sass */
+    ul.social li a.github {
+      background-position: 0 -70px; }
+      /* line 185, src/assets/styles/index.sass */
+      ul.social li a.github:hover {
+        background-position: 0 -105px; }
+    /* line 188, src/assets/styles/index.sass */
+    ul.social li a.linkedin {
+      background-position: 0 -140px; }
+      /* line 191, src/assets/styles/index.sass */
+      ul.social li a.linkedin:hover {
+        background-position: 0 -175px; }
+    /* line 194, src/assets/styles/index.sass */
+    ul.social li a.email {
+      background-position: 0 -210px; }
+      /* line 197, src/assets/styles/index.sass */
+      ul.social li a.email:hover {
+        background-position: 0 -245px; }
 
-/* line 202, src/assets/styles/index.sass */
+/* line 204, src/assets/styles/index.sass */
 div.main {
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
   padding: 0 30px 60px; }
 
-/* line 208, src/assets/styles/index.sass */
+/* line 210, src/assets/styles/index.sass */
 h2.title {
   text-align: center;
   padding: 20px 0 50px 0; }
 
-/* line 216, src/assets/styles/index.sass */
+/* line 218, src/assets/styles/index.sass */
 div.home {
   text-align: center; }
-  /* line 219, src/assets/styles/index.sass */
+  /* line 221, src/assets/styles/index.sass */
   div.home h1 {
     margin: 250px 0 220px 0; }
-  /* line 222, src/assets/styles/index.sass */
+  /* line 224, src/assets/styles/index.sass */
   div.home h2 {
     margin-bottom: 5px; }
 
-/* line 231, src/assets/styles/index.sass */
+/* line 233, src/assets/styles/index.sass */
 div.portfolio a.portfolio-piece {
   margin-bottom: 20px;
   width: 48.5%;
@@ -180,19 +180,19 @@ div.portfolio a.portfolio-piece {
   background-repeat: no-repeat;
   background-position: top center;
   float: right; }
-  /* line 239, src/assets/styles/index.sass */
+  /* line 241, src/assets/styles/index.sass */
   div.portfolio a.portfolio-piece.promo {
     width: 100%;
     float: left; }
-  /* line 243, src/assets/styles/index.sass */
+  /* line 245, src/assets/styles/index.sass */
   div.portfolio a.portfolio-piece:nth-child(odd) {
     float: left; }
 
-/* line 246, src/assets/styles/index.sass */
+/* line 248, src/assets/styles/index.sass */
 div.portfolio a:hover div.overlay {
   opacity: 1; }
 
-/* line 249, src/assets/styles/index.sass */
+/* line 251, src/assets/styles/index.sass */
 div.portfolio div.overlay {
   text-align: center;
   opacity: 0;
@@ -205,19 +205,19 @@ div.portfolio div.overlay {
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
-/* line 258, src/assets/styles/index.sass */
+/* line 260, src/assets/styles/index.sass */
 div.portfolioDetail h2, div.portfolioDetail h3, div.portfolioDetail h5 {
   text-align: left; }
 
-/* line 261, src/assets/styles/index.sass */
+/* line 263, src/assets/styles/index.sass */
 div.portfolioDetail h2 {
   padding-bottom: 10px; }
 
-/* line 264, src/assets/styles/index.sass */
+/* line 266, src/assets/styles/index.sass */
 div.portfolioDetail h3 {
   padding-bottom: 12px; }
 
-/* line 267, src/assets/styles/index.sass */
+/* line 269, src/assets/styles/index.sass */
 div.portfolioDetail div.imageHolder {
   width: 100%;
   height: 400px;
@@ -226,11 +226,11 @@ div.portfolioDetail div.imageHolder {
   background-position: center;
   margin-top: 30px; }
 
-/* line 275, src/assets/styles/index.sass */
+/* line 277, src/assets/styles/index.sass */
 div.portfolioDetail div.images {
   margin-top: 30px;
   text-align: center; }
-  /* line 279, src/assets/styles/index.sass */
+  /* line 281, src/assets/styles/index.sass */
   div.portfolioDetail div.images div {
     width: 75px;
     height: 75px;
@@ -240,15 +240,15 @@ div.portfolioDetail div.images {
     cursor: pointer;
     display: inline-block;
     margin-right: 15px; }
-    /* line 289, src/assets/styles/index.sass */
+    /* line 291, src/assets/styles/index.sass */
     div.portfolioDetail div.images div:last-child {
       margin-right: 0; }
 
-/* line 292, src/assets/styles/index.sass */
+/* line 294, src/assets/styles/index.sass */
 div.portfolioDetail p {
   margin: 25px 0; }
 
-/* line 295, src/assets/styles/index.sass */
+/* line 297, src/assets/styles/index.sass */
 div.portfolioDetail a.button {
   display: block;
   background-color: rgba(0, 0, 0, 0.7);
@@ -258,26 +258,86 @@ div.portfolioDetail a.button {
   text-shadow: none;
   text-align: center;
   margin-bottom: 15px; }
-  /* line 299, src/assets/styles/index.sass */
+  /* line 301, src/assets/styles/index.sass */
   div.portfolioDetail a.button:hover {
     color: #000;
     background-color: #fff; }
 
-/* line 309, src/assets/styles/index.sass */
+/* line 311, src/assets/styles/index.sass */
 div.about p {
   margin-bottom: 15px; }
-  /* line 312, src/assets/styles/index.sass */
+  /* line 314, src/assets/styles/index.sass */
   div.about p a {
     font-family: Constantia, serif;
     text-decoration: underline; }
 
-/* line 320, src/assets/styles/index.sass */
+/* line 322, src/assets/styles/index.sass */
 footer {
   height: 40px;
   background-color: #000;
-  width: 100%; }
-  /* line 325, src/assets/styles/index.sass */
+  width: 100%;
+  padding: 15px 15px 0; }
+  /* line 328, src/assets/styles/index.sass */
+  footer ul.social {
+    float: left;
+    display: none; }
+  /* line 332, src/assets/styles/index.sass */
   footer h6 {
-    margin: 15px 15px 0 0;
     float: right;
     color: #fff; }
+
+@media only screen and (max-width: 767px) {
+  /* line 343, src/assets/styles/index.sass */
+  nav {
+    float: right; }
+    /* line 346, src/assets/styles/index.sass */
+    nav li {
+      margin-left: 0;
+      margin-right: 40px; }
+  /* line 352, src/assets/styles/index.sass */
+  header ul.social {
+    display: none; }
+  /* line 355, src/assets/styles/index.sass */
+  footer {
+    height: 65px; }
+    /* line 358, src/assets/styles/index.sass */
+    footer ul.social {
+      display: block; }
+    /* line 361, src/assets/styles/index.sass */
+    footer h6 {
+      margin-top: 13px; } }
+
+@media only screen and (max-width: 479px) {
+  /* line 372, src/assets/styles/index.sass */
+  header a.logo div {
+    float: none;
+    margin: 15px auto; }
+  /* line 376, src/assets/styles/index.sass */
+  nav {
+    float: none;
+    margin: 15px auto;
+    text-align: center; }
+    /* line 381, src/assets/styles/index.sass */
+    nav li {
+      margin-right: 0; }
+      /* line 384, src/assets/styles/index.sass */
+      nav li:first-child {
+        margin-right: 30px; }
+  /* line 387, src/assets/styles/index.sass */
+  footer {
+    height: 97px; }
+    /* line 390, src/assets/styles/index.sass */
+    footer ul.social {
+      float: none;
+      text-align: center; }
+      /* line 394, src/assets/styles/index.sass */
+      footer ul.social li {
+        margin-right: 10px; }
+        /* line 397, src/assets/styles/index.sass */
+        footer ul.social li:last-child {
+          margin-right: 0; }
+    /* line 400, src/assets/styles/index.sass */
+    footer h6 {
+      float: none;
+      text-align: center;
+      margin-top: 15px; } }

@@ -144,12 +144,16 @@ header
       &:hover
         background-position: 0 -64px
 
+  ul.social
+    float: right
+    margin: 30px 35px 0 0
+
 // -----------------------------
 // Navigation
 // -----------------------------
 
 nav
-  padding-top: 35px
+  margin-top: 35px
   float: left
 
   li
@@ -157,8 +161,6 @@ nav
     margin-left: 40px
 
 ul.social
-  float: right
-  padding: 30px 35px 0 0
   
   li
     display: inline-block
@@ -321,8 +323,92 @@ footer
   height: 40px
   background-color: #000
   width: 100%
+  padding: 15px 15px 0
+
+  ul.social
+    float: left
+    display: none
 
   h6
-    margin: 15px 15px 0 0
     float: right
     color: #fff
+
+// -----------------------------
+// Media Queries
+// -----------------------------
+
+// Smaller than portrait iPad
+@media only screen and (max-width: 767px)
+
+  nav
+    float: right
+
+    li
+      margin-left: 0
+      margin-right: 40px
+
+  header
+
+    ul.social
+      display: none
+
+  footer
+    height: 65px
+
+    ul.social
+      display: block
+
+    h6
+      margin-top: 13px
+
+
+// Smaller than landscape iPhone 4
+@media only screen and (max-width: 479px)
+
+  header
+
+    a.logo
+
+      div
+        float: none
+        margin: 15px auto
+
+  nav
+    float: none
+    margin: 15px auto
+    text-align: center
+
+    li
+      margin-right: 0
+
+      &:first-child
+        margin-right: 30px
+
+  footer
+    height: 97px
+
+    ul.social
+      float: none
+      text-align: center
+
+      li
+        margin-right: 10px
+
+        &:last-child
+          margin-right: 0
+
+    h6
+      float: none
+      text-align: center
+      margin-top: 15px
+
+
+
+
+
+
+
+
+
+
+
