@@ -82,6 +82,12 @@ p
   line-height: 1.65em
 
 // -----------------------------
+// Variables
+// -----------------------------
+
+$footerheight: 40px
+
+// -----------------------------
 // Global Styles
 // -----------------------------
 
@@ -98,7 +104,7 @@ body
 
 div.wrapper
   min-height: 100%
-  margin-bottom: -40px
+  margin-bottom: -$footerheight
 
 a
   font-family: $linkfont
@@ -204,8 +210,9 @@ ul.social
 div.main
   max-width: 1000px
   margin: 0 auto
+  padding: 0 30px $footerheight
   overflow: hidden
-  padding: 0 30px 60px
+  background: rgba(0,255,0,0.2)
 
 h2.title
   text-align: center
@@ -217,12 +224,14 @@ h2.title
 
 div.home
   text-align: center
+  // height: 100%
+  background: red
 
   h1
-    margin: 250px 0 220px 0
+    // margin: 250px 0 220px 0
 
   h2
-    margin-bottom: 5px
+    // margin-bottom: 5px
 
 // -----------------------------
 // Portfolio
@@ -320,7 +329,7 @@ div.about
 // -----------------------------
 
 footer
-  height: 40px
+  height: $footerheight
   background-color: #000
   width: 100%
   padding: 15px 15px 0
@@ -340,6 +349,14 @@ footer
 // Smaller than portrait iPad
 @media only screen and (max-width: 767px)
 
+  $footerheight: 65px
+
+  div.wrapper
+    margin-bottom: -$footerheight
+
+  div.main
+    padding-bottom: $footerheight
+
   nav
     float: right
 
@@ -353,7 +370,7 @@ footer
       display: none
 
   footer
-    height: 65px
+    height: $footerheight
 
     ul.social
       display: block
@@ -364,6 +381,14 @@ footer
 
 // Smaller than landscape iPhone 4
 @media only screen and (max-width: 479px)
+
+  $footerheight: 97px
+
+  div.wrapper
+    margin-bottom: -$footerheight
+
+  div.main
+    padding-bottom: $footerheight
 
   header
 
@@ -385,7 +410,7 @@ footer
         margin-right: 30px
 
   footer
-    height: 97px
+    height: $footerheight
 
     ul.social
       float: none
