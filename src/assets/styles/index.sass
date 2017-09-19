@@ -19,11 +19,18 @@ $linkfont: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif
 // Sets the container to a full screen view in the background
 @mixin full-background ($z)
   position: fixed
+  top: 50%
+  left: 50%
   min-height: 100%
   min-width: 100%
   width: auto 
   height: auto
   z-index: $z
+  -ms-transform: translateX(-50%) translateY(-50%)
+  -moz-transform: translateX(-50%) translateY(-50%)
+  -webkit-transform: translateX(-50%) translateY(-50%)
+  transform: translateX(-50%) translateY(-50%)
+  background-size: cover
 
 // Styles for image overlays 
 @mixin overlay ($padding)
