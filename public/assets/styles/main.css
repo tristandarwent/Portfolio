@@ -171,58 +171,59 @@ div.main {
   padding: 0 30px 40px;
   overflow: hidden; }
 
-/* line 224, src/assets/styles/index.sass */
+/* line 223, src/assets/styles/index.sass */
 h2.title {
   text-align: center;
   padding: 20px 0 50px 0; }
 
-/* line 232, src/assets/styles/index.sass */
+/* line 231, src/assets/styles/index.sass */
 div.home {
   text-align: center;
   display: flex;
   flex-direction: column; }
-  /* line 237, src/assets/styles/index.sass */
+  /* line 236, src/assets/styles/index.sass */
   div.home h1 {
     margin-top: auto; }
-  /* line 240, src/assets/styles/index.sass */
+  /* line 239, src/assets/styles/index.sass */
   div.home h2 {
     margin-top: auto; }
-  /* line 243, src/assets/styles/index.sass */
+  /* line 242, src/assets/styles/index.sass */
   div.home h3 {
     margin: 5px 0 20px; }
 
-/* line 252, src/assets/styles/index.sass */
-div.portfolio a.portfolio-piece {
-  margin-bottom: 20px;
-  width: 48.5%;
-  height: 140px;
-  background-repeat: no-repeat;
-  background-position: top center;
-  float: right; }
-  /* line 260, src/assets/styles/index.sass */
-  div.portfolio a.portfolio-piece.promo {
+/* line 249, src/assets/styles/index.sass */
+div.portfolio {
+  overflow: hidden;
+  margin-bottom: 10px; }
+  /* line 253, src/assets/styles/index.sass */
+  div.portfolio a.portfolio-piece {
+    margin-bottom: 20px;
+    width: 48.5%;
+    height: 140px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    float: right; }
+    /* line 261, src/assets/styles/index.sass */
+    div.portfolio a.portfolio-piece.promo {
+      width: 100%; }
+    /* line 264, src/assets/styles/index.sass */
+    div.portfolio a.portfolio-piece:nth-child(odd) {
+      float: left; }
+  /* line 267, src/assets/styles/index.sass */
+  div.portfolio a:hover div.overlay {
+    opacity: 1; }
+  /* line 270, src/assets/styles/index.sass */
+  div.portfolio div.overlay {
+    text-align: center;
+    opacity: 0;
     width: 100%;
-    float: left; }
-  /* line 264, src/assets/styles/index.sass */
-  div.portfolio a.portfolio-piece:nth-child(odd) {
-    float: left; }
-
-/* line 267, src/assets/styles/index.sass */
-div.portfolio a:hover div.overlay {
-  opacity: 1; }
-
-/* line 270, src/assets/styles/index.sass */
-div.portfolio div.overlay {
-  text-align: center;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding-top: 55px;
-  text-shadow: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 55px;
+    text-shadow: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
 
 /* line 279, src/assets/styles/index.sass */
 div.portfolioDetail h2, div.portfolioDetail h3, div.portfolioDetail h5 {
@@ -315,80 +316,99 @@ footer {
   /* line 372, src/assets/styles/index.sass */
   div.home h3 {
     font-size: 1.111em; }
-  /* line 375, src/assets/styles/index.sass */
+  /* line 377, src/assets/styles/index.sass */
+  div.portfolio a.portfolio-piece {
+    float: left;
+    width: 100%; }
+  /* line 381, src/assets/styles/index.sass */
   div.wrapper {
     margin-bottom: -65px; }
-  /* line 378, src/assets/styles/index.sass */
+  /* line 384, src/assets/styles/index.sass */
   div.main {
     padding-bottom: 65px; }
-  /* line 381, src/assets/styles/index.sass */
+  /* line 387, src/assets/styles/index.sass */
   nav {
     float: right; }
-    /* line 384, src/assets/styles/index.sass */
+    /* line 390, src/assets/styles/index.sass */
     nav li {
       margin-left: 0;
       margin-right: 40px; }
-  /* line 390, src/assets/styles/index.sass */
+  /* line 396, src/assets/styles/index.sass */
   header ul.social {
     display: none; }
-  /* line 393, src/assets/styles/index.sass */
+  /* line 399, src/assets/styles/index.sass */
   footer {
     height: 65px; }
-    /* line 396, src/assets/styles/index.sass */
+    /* line 402, src/assets/styles/index.sass */
     footer ul.social {
       display: block; }
-    /* line 399, src/assets/styles/index.sass */
+    /* line 405, src/assets/styles/index.sass */
     footer h6 {
       margin-top: 13px; } }
 
 @media only screen and (max-width: 650px) {
-  /* line 406, src/assets/styles/index.sass */
+  /* line 412, src/assets/styles/index.sass */
   div.home h1 {
     font-size: 1.556em; }
-  /* line 409, src/assets/styles/index.sass */
+  /* line 415, src/assets/styles/index.sass */
   div.home h2 {
     font-size: 1.334em; }
-  /* line 412, src/assets/styles/index.sass */
+  /* line 418, src/assets/styles/index.sass */
   div.home h3 {
     font-size: 0.889em; } }
 
 @media only screen and (max-width: 479px) {
-  /* line 421, src/assets/styles/index.sass */
+  /* line 427, src/assets/styles/index.sass */
   div.wrapper {
     margin-bottom: -97px; }
-  /* line 424, src/assets/styles/index.sass */
+  /* line 430, src/assets/styles/index.sass */
   div.main {
-    padding-bottom: 97px; }
-  /* line 431, src/assets/styles/index.sass */
+    padding: 0 16px 97px; }
+  /* line 433, src/assets/styles/index.sass */
+  h2.title {
+    padding: 20px 0 25px;
+    font-size: 1.667em; }
+  /* line 439, src/assets/styles/index.sass */
+  div.portfolio a.portfolio-piece {
+    margin-bottom: 16px; }
+  /* line 446, src/assets/styles/index.sass */
   header a.logo div {
     float: none;
     margin: 15px auto; }
-  /* line 435, src/assets/styles/index.sass */
+  /* line 450, src/assets/styles/index.sass */
   nav {
     float: none;
     margin: 15px auto;
     text-align: center; }
-    /* line 440, src/assets/styles/index.sass */
+    /* line 455, src/assets/styles/index.sass */
     nav li {
       margin-right: 0; }
-      /* line 443, src/assets/styles/index.sass */
+      /* line 458, src/assets/styles/index.sass */
       nav li:first-child {
         margin-right: 30px; }
-  /* line 446, src/assets/styles/index.sass */
+  /* line 461, src/assets/styles/index.sass */
   footer {
     height: 97px; }
-    /* line 449, src/assets/styles/index.sass */
+    /* line 464, src/assets/styles/index.sass */
     footer ul.social {
       float: none;
       text-align: center; }
-      /* line 453, src/assets/styles/index.sass */
+      /* line 468, src/assets/styles/index.sass */
       footer ul.social li {
         margin-right: 10px; }
-        /* line 456, src/assets/styles/index.sass */
+        /* line 471, src/assets/styles/index.sass */
         footer ul.social li:last-child {
           margin-right: 0; }
-    /* line 459, src/assets/styles/index.sass */
+    /* line 474, src/assets/styles/index.sass */
     footer h6 {
       float: none;
       text-align: center;
       margin-top: 15px; } }
+
+@media only screen and (max-width: 320px) {
+  /* line 483, src/assets/styles/index.sass */
+  div.main {
+    padding: 0 8px 97px; }
+  /* line 488, src/assets/styles/index.sass */
+  div.portfolio a.portfolio-piece {
+    margin-bottom: 8px; } }

@@ -219,7 +219,6 @@ div.main
   margin: 0 auto
   padding: 0 30px $footerheight
   overflow: hidden
-  // background: rgba(0,255,0,0.2)
 
 h2.title
   text-align: center
@@ -248,6 +247,8 @@ div.home
 // -----------------------------
 
 div.portfolio
+  overflow: hidden
+  margin-bottom: 10px
 
   a.portfolio-piece
     margin-bottom: 20px
@@ -259,7 +260,6 @@ div.portfolio
 
     &.promo
       width: 100%
-      float: left
 
     &:nth-child(odd) 
       float: left
@@ -372,6 +372,12 @@ footer
     h3
       font-size: 1.111em
 
+  div.portfolio
+
+    a.portfolio-piece
+      float: left
+      width: 100%
+
   div.wrapper
     margin-bottom: -$footerheight
 
@@ -422,7 +428,16 @@ footer
     margin-bottom: -$footerheight
 
   div.main
-    padding-bottom: $footerheight
+    padding: 0 16px $footerheight
+
+  h2.title
+    padding: 20px 0 25px
+    font-size: 1.667em
+
+  div.portfolio
+
+    a.portfolio-piece
+      margin-bottom: 16px
 
   header
 
@@ -461,7 +476,17 @@ footer
       text-align: center
       margin-top: 15px
 
+@media only screen and (max-width: 320px)
 
+  $footerheight: 97px
+
+  div.main
+    padding: 0 8px $footerheight
+
+  div.portfolio
+
+    a.portfolio-piece
+      margin-bottom: 8px
 
 
 
