@@ -403,25 +403,32 @@ footer {
   /* line 490, src/assets/styles/index.sass */
   div.portfolio a.portfolio-piece {
     margin-bottom: 16px; }
-  /*** About ***/
+  /*** Portfolio Detail ***/
   /* line 497, src/assets/styles/index.sass */
+  div.portfolioDetail h3 {
+    font-size: 1.111em; }
+  /* line 500, src/assets/styles/index.sass */
+  div.portfolioDetail h5 {
+    font-size: 0.834em; }
+  /*** About ***/
+  /* line 507, src/assets/styles/index.sass */
   div.about p {
     margin-bottom: 12px; }
   /*** Footer ***/
-  /* line 502, src/assets/styles/index.sass */
+  /* line 512, src/assets/styles/index.sass */
   footer {
     height: 97px; }
-    /* line 505, src/assets/styles/index.sass */
+    /* line 515, src/assets/styles/index.sass */
     footer ul.social {
       float: none;
       text-align: center; }
-      /* line 509, src/assets/styles/index.sass */
+      /* line 519, src/assets/styles/index.sass */
       footer ul.social li {
         margin-right: 10px; }
-        /* line 512, src/assets/styles/index.sass */
+        /* line 522, src/assets/styles/index.sass */
         footer ul.social li:last-child {
           margin-right: 0; }
-    /* line 515, src/assets/styles/index.sass */
+    /* line 525, src/assets/styles/index.sass */
     footer h6 {
       float: none;
       text-align: center;
@@ -429,19 +436,19 @@ footer {
 
 @media only screen and (max-width: 320px) {
   /*** Typography ***/
-  /* line 526, src/assets/styles/index.sass */
+  /* line 536, src/assets/styles/index.sass */
   p {
     font-size: 0.889em;
     line-height: 1.444em; }
   /*** Main ***/
-  /* line 532, src/assets/styles/index.sass */
+  /* line 542, src/assets/styles/index.sass */
   div.main {
     padding: 0 8px 107px; }
   /*** Portfolio ***/
-  /* line 539, src/assets/styles/index.sass */
+  /* line 549, src/assets/styles/index.sass */
   div.portfolio a.portfolio-piece {
     margin-bottom: 8px; }
   /*** About ***/
-  /* line 546, src/assets/styles/index.sass */
+  /* line 556, src/assets/styles/index.sass */
   div.about p {
     margin-bottom: 10px; } }
