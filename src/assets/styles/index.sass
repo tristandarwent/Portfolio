@@ -217,7 +217,7 @@ ul.social
 div.main
   max-width: 1000px
   margin: 0 auto
-  padding: 0 30px $footerheight
+  padding: 0 30px $footerheight+10px
   overflow: hidden
 
 h2.title
@@ -240,7 +240,7 @@ div.home
     margin-top: auto
 
   h3
-    margin: 5px 0 20px
+    margin: 5px 0 10px
 
 // -----------------------------
 // Portfolio
@@ -248,7 +248,6 @@ div.home
 
 div.portfolio
   overflow: hidden
-  margin-bottom: 10px
 
   a.portfolio-piece
     margin-bottom: 20px
@@ -382,7 +381,7 @@ footer
     margin-bottom: -$footerheight
 
   div.main
-    padding-bottom: $footerheight
+    padding-bottom: $footerheight+10px
 
   nav
     float: right
@@ -428,7 +427,7 @@ footer
     margin-bottom: -$footerheight
 
   div.main
-    padding: 0 16px $footerheight
+    padding: 0 16px $footerheight+10px
 
   h2.title
     padding: 20px 0 25px
@@ -438,6 +437,15 @@ footer
 
     a.portfolio-piece
       margin-bottom: 16px
+
+  div.about
+    
+    p
+      margin-bottom: 12px
+
+  p
+    font-size: 1em
+    line-height: 1.556em
 
   header
 
@@ -481,12 +489,21 @@ footer
   $footerheight: 97px
 
   div.main
-    padding: 0 8px $footerheight
+    padding: 0 8px $footerheight+10px
 
   div.portfolio
 
     a.portfolio-piece
       margin-bottom: 8px
+
+  div.about
+    
+    p
+      margin-bottom: 10px
+
+  p
+    font-size: 0.889em
+    line-height: 1.444em
 
 
 
