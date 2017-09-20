@@ -306,122 +306,142 @@ footer {
     color: #fff; }
 
 @media only screen and (max-width: 767px) {
+  /*** Global ***/
   /* line 365, src/assets/styles/index.sass */
-  div.home h1 {
-    font-size: 1.944em; }
-  /* line 368, src/assets/styles/index.sass */
-  div.home h2 {
-    font-size: 1.667em; }
-  /* line 371, src/assets/styles/index.sass */
-  div.home h3 {
-    font-size: 1.111em; }
-  /* line 376, src/assets/styles/index.sass */
-  div.portfolio a.portfolio-piece {
-    float: left;
-    width: 100%; }
-  /* line 380, src/assets/styles/index.sass */
   div.wrapper {
     margin-bottom: -65px; }
-  /* line 383, src/assets/styles/index.sass */
-  div.main {
-    padding-bottom: 75px; }
-  /* line 386, src/assets/styles/index.sass */
+  /*** Header ***/
+  /* line 372, src/assets/styles/index.sass */
+  header ul.social {
+    display: none; }
+  /*** Navigation ***/
+  /* line 377, src/assets/styles/index.sass */
   nav {
     float: right; }
-    /* line 389, src/assets/styles/index.sass */
+    /* line 380, src/assets/styles/index.sass */
     nav li {
       margin-left: 0;
       margin-right: 40px; }
-  /* line 395, src/assets/styles/index.sass */
-  header ul.social {
-    display: none; }
-  /* line 398, src/assets/styles/index.sass */
+  /*** Main ***/
+  /* line 386, src/assets/styles/index.sass */
+  div.main {
+    padding-bottom: 75px; }
+  /*** Home ***/
+  /* line 393, src/assets/styles/index.sass */
+  div.home h1 {
+    font-size: 1.944em; }
+  /* line 396, src/assets/styles/index.sass */
+  div.home h2 {
+    font-size: 1.667em; }
+  /* line 399, src/assets/styles/index.sass */
+  div.home h3 {
+    font-size: 1.111em; }
+  /*** Portfolio ***/
+  /* line 406, src/assets/styles/index.sass */
+  div.portfolio a.portfolio-piece {
+    float: left;
+    width: 100%; }
+  /*** Footer ***/
+  /* line 412, src/assets/styles/index.sass */
   footer {
     height: 65px; }
-    /* line 401, src/assets/styles/index.sass */
+    /* line 415, src/assets/styles/index.sass */
     footer ul.social {
       display: block; }
-    /* line 404, src/assets/styles/index.sass */
+    /* line 418, src/assets/styles/index.sass */
     footer h6 {
       margin-top: 13px; } }
 
 @media only screen and (max-width: 650px) {
-  /* line 411, src/assets/styles/index.sass */
+  /*** Home ***/
+  /* line 428, src/assets/styles/index.sass */
   div.home h1 {
-    font-size: 1.556em; }
-  /* line 414, src/assets/styles/index.sass */
+    font-size: 1.611em; }
+  /* line 431, src/assets/styles/index.sass */
   div.home h2 {
     font-size: 1.334em; }
-  /* line 417, src/assets/styles/index.sass */
+  /* line 434, src/assets/styles/index.sass */
   div.home h3 {
     font-size: 0.889em; } }
 
 @media only screen and (max-width: 479px) {
-  /* line 426, src/assets/styles/index.sass */
-  div.wrapper {
-    margin-bottom: -97px; }
-  /* line 429, src/assets/styles/index.sass */
-  div.main {
-    padding: 0 16px 107px; }
-  /* line 432, src/assets/styles/index.sass */
-  h2.title {
-    padding: 20px 0 25px;
-    font-size: 1.667em; }
-  /* line 438, src/assets/styles/index.sass */
-  div.portfolio a.portfolio-piece {
-    margin-bottom: 16px; }
-  /* line 443, src/assets/styles/index.sass */
-  div.about p {
-    margin-bottom: 12px; }
-  /* line 446, src/assets/styles/index.sass */
+  /*** Typography ***/
+  /* line 445, src/assets/styles/index.sass */
   p {
     font-size: 1em;
     line-height: 1.556em; }
-  /* line 454, src/assets/styles/index.sass */
+  /*** Global ***/
+  /* line 451, src/assets/styles/index.sass */
+  div.wrapper {
+    margin-bottom: -97px; }
+  /*** Header ***/
+  /* line 460, src/assets/styles/index.sass */
   header a.logo div {
     float: none;
     margin: 15px auto; }
-  /* line 458, src/assets/styles/index.sass */
+  /*** Navigation ***/
+  /* line 466, src/assets/styles/index.sass */
   nav {
     float: none;
     margin: 15px auto;
     text-align: center; }
-    /* line 463, src/assets/styles/index.sass */
+    /* line 471, src/assets/styles/index.sass */
     nav li {
       margin-right: 0; }
-      /* line 466, src/assets/styles/index.sass */
+      /* line 474, src/assets/styles/index.sass */
       nav li:first-child {
         margin-right: 30px; }
-  /* line 469, src/assets/styles/index.sass */
+  /*** Main ***/
+  /* line 479, src/assets/styles/index.sass */
+  div.main {
+    padding: 0 16px 107px; }
+  /* line 482, src/assets/styles/index.sass */
+  h2.title {
+    padding: 20px 0 25px;
+    font-size: 1.667em; }
+  /*** Portfolio ***/
+  /* line 490, src/assets/styles/index.sass */
+  div.portfolio a.portfolio-piece {
+    margin-bottom: 16px; }
+  /*** About ***/
+  /* line 497, src/assets/styles/index.sass */
+  div.about p {
+    margin-bottom: 12px; }
+  /*** Footer ***/
+  /* line 502, src/assets/styles/index.sass */
   footer {
     height: 97px; }
-    /* line 472, src/assets/styles/index.sass */
+    /* line 505, src/assets/styles/index.sass */
     footer ul.social {
       float: none;
       text-align: center; }
-      /* line 476, src/assets/styles/index.sass */
+      /* line 509, src/assets/styles/index.sass */
       footer ul.social li {
         margin-right: 10px; }
-        /* line 479, src/assets/styles/index.sass */
+        /* line 512, src/assets/styles/index.sass */
         footer ul.social li:last-child {
           margin-right: 0; }
-    /* line 482, src/assets/styles/index.sass */
+    /* line 515, src/assets/styles/index.sass */
     footer h6 {
       float: none;
       text-align: center;
       margin-top: 15px; } }
 
 @media only screen and (max-width: 320px) {
-  /* line 491, src/assets/styles/index.sass */
-  div.main {
-    padding: 0 8px 107px; }
-  /* line 496, src/assets/styles/index.sass */
-  div.portfolio a.portfolio-piece {
-    margin-bottom: 8px; }
-  /* line 501, src/assets/styles/index.sass */
-  div.about p {
-    margin-bottom: 10px; }
-  /* line 504, src/assets/styles/index.sass */
+  /*** Typography ***/
+  /* line 526, src/assets/styles/index.sass */
   p {
     font-size: 0.889em;
-    line-height: 1.444em; } }
+    line-height: 1.444em; }
+  /*** Main ***/
+  /* line 532, src/assets/styles/index.sass */
+  div.main {
+    padding: 0 8px 107px; }
+  /*** Portfolio ***/
+  /* line 539, src/assets/styles/index.sass */
+  div.portfolio a.portfolio-piece {
+    margin-bottom: 8px; }
+  /*** About ***/
+  /* line 546, src/assets/styles/index.sass */
+  div.about p {
+    margin-bottom: 10px; } }

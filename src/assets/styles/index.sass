@@ -360,6 +360,34 @@ footer
 
   $footerheight: 65px
 
+  /*** Global ***/
+
+  div.wrapper
+    margin-bottom: -$footerheight
+
+  /*** Header ***/
+
+  header
+
+    ul.social
+      display: none
+
+  /*** Navigation ***/
+
+  nav
+    float: right
+
+    li
+      margin-left: 0
+      margin-right: 40px
+
+  /*** Main ***/
+
+  div.main
+    padding-bottom: $footerheight+10px
+
+  /*** Home ***/
+
   div.home
 
     h1
@@ -371,29 +399,15 @@ footer
     h3
       font-size: 1.111em
 
+  /*** Portfolio ***/
+
   div.portfolio
 
     a.portfolio-piece
       float: left
       width: 100%
 
-  div.wrapper
-    margin-bottom: -$footerheight
-
-  div.main
-    padding-bottom: $footerheight+10px
-
-  nav
-    float: right
-
-    li
-      margin-left: 0
-      margin-right: 40px
-
-  header
-
-    ul.social
-      display: none
+  /*** Footer ***/
 
   footer
     height: $footerheight
@@ -404,12 +418,15 @@ footer
     h6
       margin-top: 13px
 
+
 @media only screen and (max-width: 650px)
+
+  /*** Home ***/
 
   div.home
 
     h1
-      font-size: 1.556em
+      font-size: 1.611em
 
     h2
       font-size: 1.334em
@@ -423,29 +440,18 @@ footer
 
   $footerheight: 97px
 
-  div.wrapper
-    margin-bottom: -$footerheight
-
-  div.main
-    padding: 0 16px $footerheight+10px
-
-  h2.title
-    padding: 20px 0 25px
-    font-size: 1.667em
-
-  div.portfolio
-
-    a.portfolio-piece
-      margin-bottom: 16px
-
-  div.about
-    
-    p
-      margin-bottom: 12px
+  /*** Typography ***/
 
   p
     font-size: 1em
     line-height: 1.556em
+
+  /*** Global ***/
+
+  div.wrapper
+    margin-bottom: -$footerheight
+
+  /*** Header ***/
 
   header
 
@@ -454,6 +460,8 @@ footer
       div
         float: none
         margin: 15px auto
+
+  /*** Navigation ***/
 
   nav
     float: none
@@ -465,6 +473,31 @@ footer
 
       &:first-child
         margin-right: 30px
+
+  /*** Main ***/
+
+  div.main
+    padding: 0 16px $footerheight+10px
+
+  h2.title
+    padding: 20px 0 25px
+    font-size: 1.667em
+
+  /*** Portfolio ***/
+
+  div.portfolio
+
+    a.portfolio-piece
+      margin-bottom: 16px
+
+  /*** About ***/
+
+  div.about
+    
+    p
+      margin-bottom: 12px
+
+  /*** Footer ***/
 
   footer
     height: $footerheight
@@ -488,22 +521,30 @@ footer
 
   $footerheight: 97px
 
+  /*** Typography ***/
+
+  p
+    font-size: 0.889em
+    line-height: 1.444em
+
+  /*** Main ***/
+
   div.main
     padding: 0 8px $footerheight+10px
+
+  /*** Portfolio ***/
 
   div.portfolio
 
     a.portfolio-piece
       margin-bottom: 8px
 
+  /*** About ***/
+
   div.about
     
     p
       margin-bottom: 10px
-
-  p
-    font-size: 0.889em
-    line-height: 1.444em
 
 
 
