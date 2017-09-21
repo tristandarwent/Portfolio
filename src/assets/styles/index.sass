@@ -19,11 +19,18 @@ $linkfont: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif
 // Sets the container to a full screen view in the background
 @mixin full-background ($z)
   position: fixed
+  top: 50%
+  left: 50%
   min-height: 100%
   min-width: 100%
   width: auto 
   height: auto
   z-index: $z
+  -ms-transform: translateX(-50%) translateY(-50%)
+  -moz-transform: translateX(-50%) translateY(-50%)
+  -webkit-transform: translateX(-50%) translateY(-50%)
+  transform: translateX(-50%) translateY(-50%)
+  background-size: cover
 
 // Styles for image overlays 
 @mixin overlay ($padding)
@@ -82,6 +89,12 @@ p
   line-height: 1.65em
 
 // -----------------------------
+// Variables
+// -----------------------------
+
+$footerheight: 40px
+
+// -----------------------------
 // Global Styles
 // -----------------------------
 
@@ -98,7 +111,7 @@ body
 
 div.wrapper
   min-height: 100%
-  margin-bottom: -40px
+  margin-bottom: -$footerheight
 
 a
   font-family: $linkfont
@@ -144,12 +157,16 @@ header
       &:hover
         background-position: 0 -64px
 
+  ul.social
+    float: right
+    margin: 30px 35px 0 0
+
 // -----------------------------
 // Navigation
 // -----------------------------
 
 nav
-  padding-top: 35px
+  margin-top: 35px
   float: left
 
   li
@@ -157,8 +174,6 @@ nav
     margin-left: 40px
 
 ul.social
-  float: right
-  padding: 30px 35px 0 0
   
   li
     display: inline-block
@@ -202,8 +217,8 @@ ul.social
 div.main
   max-width: 1000px
   margin: 0 auto
+  padding: 0 30px $footerheight+10px
   overflow: hidden
-  padding: 0 30px 60px
 
 h2.title
   text-align: center
@@ -215,18 +230,24 @@ h2.title
 
 div.home
   text-align: center
+  display: flex
+  flex-direction: column
 
   h1
-    margin: 250px 0 220px 0
+    margin-top: auto
 
   h2
-    margin-bottom: 5px
+    margin-top: auto
+
+  h3
+    margin: 5px 0 10px
 
 // -----------------------------
 // Portfolio
 // -----------------------------
 
 div.portfolio
+  overflow: hidden
 
   a.portfolio-piece
     margin-bottom: 20px
@@ -238,7 +259,6 @@ div.portfolio
 
     &.promo
       width: 100%
-      float: left
 
     &:nth-child(odd) 
       float: left
@@ -254,6 +274,9 @@ div.portfolio
 // -----------------------------
 
 div.portfolioDetail
+
+  $itemSpacing: 25px
+  $imageSpacing: 12px
   
   h2, h3, h5
     text-align: left
@@ -264,37 +287,34 @@ div.portfolioDetail
   h3
     padding-bottom: 12px
 
-  div.imageHolder
-    width: 100%
-    height: 400px
-    background-size: contain
-    background-repeat: no-repeat
-    background-position: center
-    margin-top: 30px
+  img.mainImg
+    display: block
+    margin: $itemSpacing auto
+    width: auto
+    height: auto
+    max-height: 400px
+    max-width: 100%
 
-  div.images
-    margin-top: 30px 
-    text-align: center
+  div.additionalImgs
+    margin: $itemSpacing (-$imageSpacing) 0
+    width: calc(100% + #{$imageSpacing} * 2)
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
 
     div
-      width: 75px
-      height: 75px
-      background-size: contain
-      background-repeat: no-repeat
-      background-position: center
-      cursor: pointer
       display: inline-block
-      margin-right: 15px
-
-      &:last-child
-        margin-right: 0
-        
-  p
-    margin: 25px 0 
+      max-height: 400px
+      max-width: 100%
+      margin: 0 $imageSpacing $itemSpacing
+      
+      img
+        max-height: inherit
+        max-width: inherit
 
   a.button
     @include button-style
-    margin-bottom: 15px
+    margin-bottom: $itemSpacing/2
 
     &:hover 
       color: #000
@@ -318,11 +338,245 @@ div.about
 // -----------------------------
 
 footer
-  height: 40px
+  height: $footerheight
   background-color: #000
   width: 100%
+  padding: 15px 15px 0
+
+  ul.social
+    float: left
+    display: none
 
   h6
-    margin: 15px 15px 0 0
     float: right
     color: #fff
+
+// -----------------------------
+// Media Queries
+// -----------------------------
+
+// Smaller than portrait iPad
+@media only screen and (max-width: 767px)
+
+  $footerheight: 65px
+
+  /*** Global ***/
+
+  div.wrapper
+    margin-bottom: -$footerheight
+
+  /*** Header ***/
+
+  header
+
+    ul.social
+      display: none
+
+  /*** Navigation ***/
+
+  nav
+    float: right
+
+    li
+      margin-left: 0
+      margin-right: 40px
+
+  /*** Main ***/
+
+  div.main
+    padding-bottom: $footerheight+10px
+
+  /*** Home ***/
+
+  div.home
+
+    h1
+      font-size: 1.944em
+
+    h2
+      font-size: 1.667em
+
+    h3
+      font-size: 1.111em
+
+  /*** Portfolio ***/
+
+  div.portfolio
+
+    a.portfolio-piece
+      float: left
+      width: 100%
+
+  /*** Footer ***/
+
+  footer
+    height: $footerheight
+
+    ul.social
+      display: block
+
+    h6
+      margin-top: 13px
+
+
+@media only screen and (max-width: 650px)
+
+  /*** Home ***/
+
+  div.home
+
+    h1
+      font-size: 1.611em
+
+    h2
+      font-size: 1.334em
+
+    h3
+      font-size: 0.889em
+
+
+// Smaller than landscape iPhone 4
+@media only screen and (max-width: 479px)
+
+  $footerheight: 97px
+
+  /*** Typography ***/
+
+  p
+    font-size: 1em
+    line-height: 1.556em
+
+  /*** Global ***/
+
+  div.wrapper
+    margin-bottom: -$footerheight
+
+  /*** Header ***/
+
+  header
+
+    a.logo
+
+      div
+        float: none
+        margin: 15px auto
+
+  /*** Navigation ***/
+
+  nav
+    float: none
+    margin: 15px auto
+    text-align: center
+
+    li
+      margin-right: 0
+
+      &:first-child
+        margin-right: 30px
+
+  /*** Main ***/
+
+  div.main
+    padding: 0 16px $footerheight+10px
+
+  h2.title
+    padding: 20px 0 25px
+    font-size: 1.667em
+
+  /*** Portfolio ***/
+
+  div.portfolio
+
+    a.portfolio-piece
+      margin-bottom: 16px
+
+  /*** Portfolio Detail ***/
+
+  div.portfolioDetail
+
+    $itemSpacing: 16px
+    $imageSpacing: 12px
+
+    h3
+      font-size: 1.111em
+
+    h5
+      font-size: 0.834em
+
+    img.mainImg
+      margin: $itemSpacing auto
+
+    div.additionalImgs
+      margin: $itemSpacing (-$imageSpacing) 0
+      width: calc(100% + #{$imageSpacing} * 2)
+
+      div
+        margin: 0 $imageSpacing $itemSpacing
+
+    a.button
+      margin-bottom: $itemSpacing/2
+
+  /*** About ***/
+
+  div.about
+    
+    p
+      margin-bottom: 12px
+
+  /*** Footer ***/
+
+  footer
+    height: $footerheight
+
+    ul.social
+      float: none
+      text-align: center
+
+      li
+        margin-right: 10px
+
+        &:last-child
+          margin-right: 0
+
+    h6
+      float: none
+      text-align: center
+      margin-top: 15px
+
+@media only screen and (max-width: 320px)
+
+  $footerheight: 97px
+
+  /*** Typography ***/
+
+  p
+    font-size: 0.889em
+    line-height: 1.444em
+
+  /*** Main ***/
+
+  div.main
+    padding: 0 8px $footerheight+10px
+
+  /*** Portfolio ***/
+
+  div.portfolio
+
+    a.portfolio-piece
+      margin-bottom: 8px
+
+  /*** About ***/
+
+  div.about
+    
+    p
+      margin-bottom: 10px
+
+
+
+
+
+
+
+
+

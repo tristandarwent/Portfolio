@@ -23,7 +23,7 @@ html
 
   //- Background Video
   
-  video.bg-vid(autoplay loop)
+  video.bg-vid(autoplay loop playsinline)
 
     source(src="/assets/videos/bg-video.mp4" type="video/mp4")
 
@@ -77,7 +77,17 @@ html
 
   footer
 
-    h6 ©2015 Tristan Darwent
+    ul.social
+
+        li: a.twitter(href="https://twitter.com/tristandarwent" target="_blank")
+
+        li: a.github(href="https://github.com/tristandarwent" target="_blank")
+
+        li: a.linkedin(href="http://www.linkedin.com/pub/tristan-darwent/91/535/388" target="_blank")
+
+        li: a.email(href="mailto:tristandarwent@gmail.com")
+
+    h6 ©2017 Tristan Darwent
 
   // -----------------------------
   // Templates
@@ -93,7 +103,7 @@ html
 
       h2 Tristan Darwent
 
-      h3 Front-End Web/App Developer
+      h3 Interactive Developer
 
   //- Portfolio Template
 
@@ -143,17 +153,19 @@ html
       
       h5 {{piece.role}}
 
-      div.imageHolder(style="background-image: url(../assets/images/{{piece.screen1}})")
-
-      div.images
-      
-        div.thumbnail(style="background-image: url(../assets/images/{{piece.screen1}})")
-        
-        div.thumbnail(style="background-image: url(../assets/images/{{piece.screen2}})")
-        
-        div.thumbnail(style="background-image: url(../assets/images/{{piece.screen3}})")
+      img.pieceImg.mainImg(src="../assets/images/{{piece.screen1}}")
 
       p {{piece.description}}
+
+      div.additionalImgs
+        
+        div
+          
+          img.pieceImg(src="../assets/images/{{piece.screen2}}")
+
+        div
+
+          img.pieceImg(src="../assets/images/{{piece.screen3}}")
 
       //- If piece has a site link
 
@@ -191,14 +203,14 @@ html
 
       p.
         Creating interesting and polished websites and mobile applications is my goal.
-        I take creativity and bring it to life on a screen. I speak HTML, CSS, Javascript, AngularJS, Java, and Objective C. I enjoy board games, 
+        I take creativity and bring it to life on a screen. I speak Swift, Objective-C, HTML, CSS, Javascript, and more. I enjoy board games, 
         record collecting, puzzle solving, and messing around with Arduinos.
 
       p I’d like to work with you.
 
       p 
         | You can download my resume 
-        a(href="assets/files/Resume_Tristan_Darwent_2015.pdf" target="_blank") here
+        a(href="assets/files/Tristan-Darwent-Resume-June-2017.pdf" target="_blank") here
         | .
 
       p 

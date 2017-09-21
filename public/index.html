@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="/assets/styles/reset.css" type="text/css">
   <link rel="stylesheet" href="/assets/styles/main.css" type="text/css">
   <body></body>
-  <video autoplay loop class="bg-vid">
+  <video autoplay loop playsinline class="bg-vid">
     <source src="/assets/videos/bg-video.mp4" type="video/mp4">
     <source src="/assets/videos/bg-video.ogv" type="video/ogg">
   </video>
@@ -34,7 +34,13 @@
     <div class="main"></div>
   </div>
   <footer>
-    <h6>©2015 Tristan Darwent</h6>
+    <ul class="social">
+      <li><a href="https://twitter.com/tristandarwent" target="_blank" class="twitter"></a></li>
+      <li><a href="https://github.com/tristandarwent" target="_blank" class="github"></a></li>
+      <li><a href="http://www.linkedin.com/pub/tristan-darwent/91/535/388" target="_blank" class="linkedin"></a></li>
+      <li><a href="mailto:tristandarwent@gmail.com" class="email"></a></li>
+    </ul>
+    <h6>©2017 Tristan Darwent</h6>
   </footer>
   <!-- ------------------------------->
   <!-- Templates-->
@@ -43,7 +49,7 @@
     <div class="page home">
       <h1>let's build some cool shit together</h1>
       <h2>Tristan Darwent</h2>
-      <h3>Front-End Web/App Developer</h3>
+      <h3>Interactive Developer</h3>
     </div>
   </script>
   <script id="portfolio" type="text/template">
@@ -65,14 +71,12 @@
     <div class="page portfolioDetail">
       <h2 class="title">{{piece.name}}</h2>
       <h3>{{piece.deck}}</h3>
-      <h5>{{piece.role}}</h5>
-      <div style="background-image: url(../assets/images/{{piece.screen1}})" class="imageHolder"></div>
-      <div class="images">
-        <div style="background-image: url(../assets/images/{{piece.screen1}})" class="thumbnail"></div>
-        <div style="background-image: url(../assets/images/{{piece.screen2}})" class="thumbnail"></div>
-        <div style="background-image: url(../assets/images/{{piece.screen3}})" class="thumbnail"></div>
-      </div>
+      <h5>{{piece.role}}</h5><img src="../assets/images/{{piece.screen1}}" class="pieceImg mainImg">
       <p>{{piece.description}}</p>
+      <div class="additionalImgs">
+        <div><img src="../assets/images/{{piece.screen2}}" class="pieceImg"></div>
+        <div><img src="../assets/images/{{piece.screen3}}" class="pieceImg"></div>
+      </div>
       {{#if piece.site_link}}<a href="{{piece.site_link}}" target="_blank" class="button">View Site</a>{{/if}}
       {{#if piece.github_link}}<a href="{{piece.github_link}}" target="_blank" class="button">View On Github</a>{{/if}}
       {{#if piece.video_link}}<a href="{{piece.video_link}}" target="_blank" class="button">View Video</a>{{/if}}
@@ -84,14 +88,14 @@
       <p>I'm Tristan Darwent and I'm a developer. </p>
       <p>
         Creating interesting and polished websites and mobile applications is my goal.
-        I take creativity and bring it to life on a screen. I speak HTML, CSS, Javascript, AngularJS, Java, and Objective C. I enjoy board games, 
+        I take creativity and bring it to life on a screen. I speak Swift, Objective-C, HTML, CSS, Javascript, and more. I enjoy board games, 
         record collecting, puzzle solving, and messing around with Arduinos.
         
       </p>
       <p>I’d like to work with you.</p>
       <p>
          
-        You can download my resume <a href="assets/files/Resume_Tristan_Darwent_2015.pdf" target="_blank">here</a>.
+        You can download my resume <a href="assets/files/Tristan-Darwent-Resume-June-2017.pdf" target="_blank">here</a>.
       </p>
       <p>
          

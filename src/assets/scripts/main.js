@@ -1,21 +1,32 @@
 // Stores all the portfolio piece data
-
 var portfolioPieces = [
 {
-  'name': 'Boqs',
-  'deck': 'NFC Lockbox',
-  'description': 'Boqs is a modern lockbox that uses NFC technology. By simply tapping your NFC-enabled phone or tag you can unlock the Boqs. My co-founder Will Du and I created an inital prototype in late 2014 using Arduino and humidor box. We have since gone to win a $10,000 Venture Seed Fund to help grow this idea. We aim to create a fantastic looking lockbox that is easy to use and has useful and unique features.',
-  'image': 'boqsBanner.jpg',
-  'role': 'Co-Founder/Developer',
-  'screen1': 'boqs1.jpg',
-  'screen2': 'boqs2.jpg',
-  'screen3': 'boqs3.jpg',
-  'site_link': 'http://www.boqs.com',
+  'name': 'ParticipAid',
+  'deck': 'Research Participant iOS App',
+  'description': 'ParticipAid is an app made to help scientific researchers easily find and attract participants. Researchers will post ads detailing the subject and specifications of the study and users can easily complete quick questionnaires to see if they qualify and automatically enroll. ParticipAid was built initially as a proof-of-concept on Ionic and then rebuilt from the ground up natively with Swift. ParticipAid will be launching in 2017.',
+  'image': 'participAidBanner.jpg',
+  'role': 'iOS Developer',
+  'screen1': 'participAidScreen1.png',
+  'screen2': 'participAidScreen2.png',
+  'screen3': 'participAidScreen3.png',
+  'site_link': 'https://www.participaid.co/',
   'github_link': '',
-  'video_link': 'https://vimeo.com/139308155',
-  'url': 'boqs'
-},
-{
+  'video_link': '',
+  'url': 'participaid'
+}, {
+  'name': 'Style Girlfriend',
+  'deck': 'Fashion Blog/Website',
+  'description': 'Style Girlfriend is a men’s fashion blog and website from the perspective of women. With a simple and clean design, it is also fully responsive. Built with the addition of languages and tools like PHP, Sass, JQuery, and Grunt.',
+  'image': 'styleGirlfriendBanner.jpg',
+  'role': 'Front End Developer',
+  'screen1': 'styleGirlfriendScreen1.png',
+  'screen2': 'styleGirlfriendScreen2.png',
+  'screen3': 'styleGirlfriendScreen3.png',
+  'site_link': 'https://stylegirlfriend.com/',
+  'github_link': '',
+  'video_link': '',
+  'url': 'stylegirlfriend'
+}, {
   'name': 'Safe Whistle',
   'deck': 'Safety App',
   'description': 'Safe Whistle is a native iOS app created to help keep runners safe when running alone and late at night. When the app is activated and the headphones are unplugged, the app will automatically send out a text message with their location to friends that the user has set.',
@@ -42,6 +53,19 @@ var portfolioPieces = [
   'github_link': '',
   'video_link': '',
   'url': 'appseed'
+}, {
+  'name': 'Boqs',
+  'deck': 'NFC Lockbox',
+  'description': 'Boqs is a modern lockbox that uses NFC technology. By simply tapping your NFC-enabled phone or tag you can unlock the Boqs. My co-founder Will Du and I created an inital prototype in late 2014 using Arduino and humidor box. We have since gone to win a $10,000 Venture Seed Fund to help grow this idea. We aim to create a fantastic looking lockbox that is easy to use and has useful and unique features.',
+  'image': 'boqsBanner.jpg',
+  'role': 'Co-Founder/Developer',
+  'screen1': 'boqs3.jpg',
+  'screen2': 'boqs2.jpg',
+  'screen3': 'boqs1.jpg',
+  'site_link': 'http://www.boqs.com',
+  'github_link': '',
+  'video_link': 'https://vimeo.com/139308155',
+  'url': 'boqs'
 }, {
   'name': 'Marker',
   'deck': 'Board Game App for iPhone',
@@ -193,6 +217,12 @@ jQuery(function($) {
 
       // Set update the containers HTML
       $(this.el).html(html);
+
+      $('div.page.home').height($(window).height() - $('header').height() - $('footer').outerHeight(true) + 'px');
+
+      window.onresize = function() {
+        $('div.page.home').height($(window).height() - $('header').height() - $('footer').outerHeight(true) + 'px');
+      }
     }
 
   });
