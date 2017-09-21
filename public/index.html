@@ -71,14 +71,12 @@
     <div class="page portfolioDetail">
       <h2 class="title">{{piece.name}}</h2>
       <h3>{{piece.deck}}</h3>
-      <h5>{{piece.role}}</h5>
-      <div style="background-image: url(../assets/images/{{piece.screen1}})" class="imageHolder"></div>
-      <div class="images">
-        <div style="background-image: url(../assets/images/{{piece.screen1}})" class="thumbnail"></div>
-        <div style="background-image: url(../assets/images/{{piece.screen2}})" class="thumbnail"></div>
-        <div style="background-image: url(../assets/images/{{piece.screen3}})" class="thumbnail"></div>
-      </div>
+      <h5>{{piece.role}}</h5><img src="../assets/images/{{piece.screen1}}" class="pieceImg mainImg">
       <p>{{piece.description}}</p>
+      <div class="additionalImgs">
+        <div><img src="../assets/images/{{piece.screen2}}" class="pieceImg"></div>
+        <div><img src="../assets/images/{{piece.screen3}}" class="pieceImg"></div>
+      </div>
       {{#if piece.site_link}}<a href="{{piece.site_link}}" target="_blank" class="button">View Site</a>{{/if}}
       {{#if piece.github_link}}<a href="{{piece.github_link}}" target="_blank" class="button">View On Github</a>{{/if}}
       {{#if piece.video_link}}<a href="{{piece.video_link}}" target="_blank" class="button">View Video</a>{{/if}}

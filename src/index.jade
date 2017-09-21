@@ -153,17 +153,19 @@ html
       
       h5 {{piece.role}}
 
-      div.imageHolder(style="background-image: url(../assets/images/{{piece.screen1}})")
-
-      div.images
-      
-        div.thumbnail(style="background-image: url(../assets/images/{{piece.screen1}})")
-        
-        div.thumbnail(style="background-image: url(../assets/images/{{piece.screen2}})")
-        
-        div.thumbnail(style="background-image: url(../assets/images/{{piece.screen3}})")
+      img.pieceImg.mainImg(src="../assets/images/{{piece.screen1}}")
 
       p {{piece.description}}
+
+      div.additionalImgs
+        
+        div
+          
+          img.pieceImg(src="../assets/images/{{piece.screen2}}")
+
+        div
+
+          img.pieceImg(src="../assets/images/{{piece.screen3}}")
 
       //- If piece has a site link
 

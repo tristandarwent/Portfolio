@@ -224,48 +224,44 @@ div.portfolio {
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
 
-/* line 278, src/assets/styles/index.sass */
+/* line 281, src/assets/styles/index.sass */
 div.portfolioDetail h2, div.portfolioDetail h3, div.portfolioDetail h5 {
   text-align: left; }
 
-/* line 281, src/assets/styles/index.sass */
+/* line 284, src/assets/styles/index.sass */
 div.portfolioDetail h2 {
   padding-bottom: 10px; }
 
-/* line 284, src/assets/styles/index.sass */
+/* line 287, src/assets/styles/index.sass */
 div.portfolioDetail h3 {
   padding-bottom: 12px; }
 
-/* line 287, src/assets/styles/index.sass */
-div.portfolioDetail div.imageHolder {
-  width: 100%;
-  height: 400px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-top: 30px; }
+/* line 290, src/assets/styles/index.sass */
+div.portfolioDetail img.mainImg {
+  display: block;
+  margin: 25px auto;
+  width: auto;
+  height: auto;
+  max-height: 400px;
+  max-width: 100%; }
 
-/* line 295, src/assets/styles/index.sass */
-div.portfolioDetail div.images {
-  margin-top: 30px;
-  text-align: center; }
-  /* line 299, src/assets/styles/index.sass */
-  div.portfolioDetail div.images div {
-    width: 75px;
-    height: 75px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
+/* line 298, src/assets/styles/index.sass */
+div.portfolioDetail div.additionalImgs {
+  margin: 25px -12px 0;
+  width: calc(100% + 12px * 2);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  /* line 305, src/assets/styles/index.sass */
+  div.portfolioDetail div.additionalImgs div {
     display: inline-block;
-    margin-right: 15px; }
-    /* line 309, src/assets/styles/index.sass */
-    div.portfolioDetail div.images div:last-child {
-      margin-right: 0; }
-
-/* line 312, src/assets/styles/index.sass */
-div.portfolioDetail p {
-  margin: 25px 0; }
+    max-height: 400px;
+    max-width: 100%;
+    margin: 0 12px 25px; }
+    /* line 311, src/assets/styles/index.sass */
+    div.portfolioDetail div.additionalImgs div img {
+      max-height: inherit;
+      max-width: inherit; }
 
 /* line 315, src/assets/styles/index.sass */
 div.portfolioDetail a.button {
@@ -276,7 +272,7 @@ div.portfolioDetail a.button {
   border: 1px solid #fff;
   text-shadow: none;
   text-align: center;
-  margin-bottom: 15px; }
+  margin-bottom: 12.5px; }
   /* line 319, src/assets/styles/index.sass */
   div.portfolioDetail a.button:hover {
     color: #000;
@@ -404,31 +400,44 @@ footer {
   div.portfolio a.portfolio-piece {
     margin-bottom: 16px; }
   /*** Portfolio Detail ***/
-  /* line 497, src/assets/styles/index.sass */
+  /* line 500, src/assets/styles/index.sass */
   div.portfolioDetail h3 {
     font-size: 1.111em; }
-  /* line 500, src/assets/styles/index.sass */
+  /* line 503, src/assets/styles/index.sass */
   div.portfolioDetail h5 {
     font-size: 0.834em; }
+  /* line 506, src/assets/styles/index.sass */
+  div.portfolioDetail img.mainImg {
+    margin: 16px auto; }
+  /* line 509, src/assets/styles/index.sass */
+  div.portfolioDetail div.additionalImgs {
+    margin: 16px -12px 0;
+    width: calc(100% + 12px * 2); }
+    /* line 513, src/assets/styles/index.sass */
+    div.portfolioDetail div.additionalImgs div {
+      margin: 0 12px 16px; }
+  /* line 516, src/assets/styles/index.sass */
+  div.portfolioDetail a.button {
+    margin-bottom: 8px; }
   /*** About ***/
-  /* line 507, src/assets/styles/index.sass */
+  /* line 523, src/assets/styles/index.sass */
   div.about p {
     margin-bottom: 12px; }
   /*** Footer ***/
-  /* line 512, src/assets/styles/index.sass */
+  /* line 528, src/assets/styles/index.sass */
   footer {
     height: 97px; }
-    /* line 515, src/assets/styles/index.sass */
+    /* line 531, src/assets/styles/index.sass */
     footer ul.social {
       float: none;
       text-align: center; }
-      /* line 519, src/assets/styles/index.sass */
+      /* line 535, src/assets/styles/index.sass */
       footer ul.social li {
         margin-right: 10px; }
-        /* line 522, src/assets/styles/index.sass */
+        /* line 538, src/assets/styles/index.sass */
         footer ul.social li:last-child {
           margin-right: 0; }
-    /* line 525, src/assets/styles/index.sass */
+    /* line 541, src/assets/styles/index.sass */
     footer h6 {
       float: none;
       text-align: center;
@@ -436,19 +445,19 @@ footer {
 
 @media only screen and (max-width: 320px) {
   /*** Typography ***/
-  /* line 536, src/assets/styles/index.sass */
+  /* line 552, src/assets/styles/index.sass */
   p {
     font-size: 0.889em;
     line-height: 1.444em; }
   /*** Main ***/
-  /* line 542, src/assets/styles/index.sass */
+  /* line 558, src/assets/styles/index.sass */
   div.main {
     padding: 0 8px 107px; }
   /*** Portfolio ***/
-  /* line 549, src/assets/styles/index.sass */
+  /* line 565, src/assets/styles/index.sass */
   div.portfolio a.portfolio-piece {
     margin-bottom: 8px; }
   /*** About ***/
-  /* line 556, src/assets/styles/index.sass */
+  /* line 572, src/assets/styles/index.sass */
   div.about p {
     margin-bottom: 10px; } }

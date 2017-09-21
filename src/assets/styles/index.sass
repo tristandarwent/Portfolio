@@ -274,6 +274,9 @@ div.portfolio
 // -----------------------------
 
 div.portfolioDetail
+
+  $itemSpacing: 25px
+  $imageSpacing: 12px
   
   h2, h3, h5
     text-align: left
@@ -284,37 +287,34 @@ div.portfolioDetail
   h3
     padding-bottom: 12px
 
-  div.imageHolder
-    width: 100%
-    height: 400px
-    background-size: contain
-    background-repeat: no-repeat
-    background-position: center
-    margin-top: 30px
+  img.mainImg
+    display: block
+    margin: $itemSpacing auto
+    width: auto
+    height: auto
+    max-height: 400px
+    max-width: 100%
 
-  div.images
-    margin-top: 30px 
-    text-align: center
+  div.additionalImgs
+    margin: $itemSpacing (-$imageSpacing) 0
+    width: calc(100% + #{$imageSpacing} * 2)
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
 
     div
-      width: 75px
-      height: 75px
-      background-size: contain
-      background-repeat: no-repeat
-      background-position: center
-      cursor: pointer
       display: inline-block
-      margin-right: 15px
-
-      &:last-child
-        margin-right: 0
-        
-  p
-    margin: 25px 0 
+      max-height: 400px
+      max-width: 100%
+      margin: 0 $imageSpacing $itemSpacing
+      
+      img
+        max-height: inherit
+        max-width: inherit
 
   a.button
     @include button-style
-    margin-bottom: 15px
+    margin-bottom: $itemSpacing/2
 
     &:hover 
       color: #000
@@ -494,11 +494,27 @@ footer
 
   div.portfolioDetail
 
+    $itemSpacing: 16px
+    $imageSpacing: 12px
+
     h3
       font-size: 1.111em
 
     h5
       font-size: 0.834em
+
+    img.mainImg
+      margin: $itemSpacing auto
+
+    div.additionalImgs
+      margin: $itemSpacing (-$imageSpacing) 0
+      width: calc(100% + #{$imageSpacing} * 2)
+
+      div
+        margin: 0 $imageSpacing $itemSpacing
+
+    a.button
+      margin-bottom: $itemSpacing/2
 
   /*** About ***/
 
