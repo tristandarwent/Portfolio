@@ -87,7 +87,7 @@ html
 
         li: a.email(href="mailto:tristandarwent@gmail.com")
 
-    h6 ©2017 Tristan Darwent
+    h6 ©2018 Tristan Darwent
 
   // -----------------------------
   // Templates
@@ -166,6 +166,14 @@ html
         div
 
           img.pieceImg(src="../assets/images/{{piece.screen3}}")
+
+      //- If piece has an iOS link
+
+      | {{#if piece.ios_link}}
+
+      a.button(href="{{piece.ios_link}}" target="_blank") Download iOS App
+
+      | {{/if}}
 
       //- If piece has a site link
 

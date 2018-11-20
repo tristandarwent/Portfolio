@@ -40,7 +40,7 @@
       <li><a href="http://www.linkedin.com/pub/tristan-darwent/91/535/388" target="_blank" class="linkedin"></a></li>
       <li><a href="mailto:tristandarwent@gmail.com" class="email"></a></li>
     </ul>
-    <h6>©2017 Tristan Darwent</h6>
+    <h6>©2018 Tristan Darwent</h6>
   </footer>
   <!-- ------------------------------->
   <!-- Templates-->
@@ -77,6 +77,7 @@
         <div><img src="../assets/images/{{piece.screen2}}" class="pieceImg"></div>
         <div><img src="../assets/images/{{piece.screen3}}" class="pieceImg"></div>
       </div>
+      {{#if piece.ios_link}}<a href="{{piece.ios_link}}" target="_blank" class="button">Download iOS App</a>{{/if}}
       {{#if piece.site_link}}<a href="{{piece.site_link}}" target="_blank" class="button">View Site</a>{{/if}}
       {{#if piece.github_link}}<a href="{{piece.github_link}}" target="_blank" class="button">View On Github</a>{{/if}}
       {{#if piece.video_link}}<a href="{{piece.video_link}}" target="_blank" class="button">View Video</a>{{/if}}
