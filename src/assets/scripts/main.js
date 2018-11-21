@@ -259,10 +259,12 @@ jQuery(function($) {
       // Set update the containers HTML
       $(this.el).html(html);
 
-      $('div.page.home').height($(window).height() - $('header').height() - $('footer').outerHeight(true) + 'px');
+      // Makes the home page the right size for the footer to touch the bottom
+      // TODO: Find out what's causing the extra space requiring the -12 on this
+      $('div.page.home').height($(window).height() - $('header').height() - $('footer').outerHeight(true) - 12 + 'px');
 
       window.onresize = function() {
-        $('div.page.home').height($(window).height() - $('header').height() - $('footer').outerHeight(true) + 'px');
+        $('div.page.home').height($(window).height() - $('header').height() - $('footer').outerHeight(true) - 12 - + 'px');
       }
     }
 
